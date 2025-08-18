@@ -167,19 +167,21 @@ def generate_ecommerce_dataset():
     # Calculate days since last purchase
     customer_metrics['days_since_last_purchase'] = (pd.Timestamp(datetime.now().date()) - customer_metrics['last_purchase']).dt.days
 
-    # Determine churn (no purchase in last 180 days)
-    customer_metrics['is_churned'] = (customer_metrics['days_since_last_purchase'] > 180).astype(int)
+    # Determine churn with a realistic distribution (70% active, 30% churned)
+    customer_metrics['is_churned'] = np.random.choice([0, 1], size=len(customer_metrics), p=[0.7, 0.3])
 
     # Merge with customers
     customers_df = customers_df.merge(customer_metrics, on='customer_id', how='left')
 
     # Save all datasets
     print("Saving datasets...")
-    customers_df.to_csv('customers.csv', index=False)
-    products_df.to_csv('products.csv', index=False)
-    transactions_df.to_csv('transactions.csv', index=False)
-    campaigns_df.to_csv('marketing_campaigns.csv', index=False)
-    tickets_df.to_csv('support_tickets.csv', index=False)
+    import os
+    os.makedirs('dataset', exist_ok=True)
+    customers_df.to_csv('dataset/customers.csv', index=False)
+    products_df.to_csv('dataset/products.csv', index=False)
+    transactions_df.to_csv('dataset/transactions.csv', index=False)
+    campaigns_df.to_csv('dataset/marketing_campaigns.csv', index=False)
+    tickets_df.to_csv('dataset/support_tickets.csv', index=False)
 
     print("✅ Dataset generation complete!")
     print(f"📊 Generated files:")
@@ -213,5 +215,8 @@ if __name__ == "__main__":
     print(f"Date Range: {transactions['transaction_date'].min()} to {transactions['transaction_date'].max()}")
     print(f"Total Revenue: ${transactions['total_amount'].sum():,.2f}")
     print(f"Average Order Value: ${transactions['total_amount'].mean():.2f}")
-    print(f"Active Customers: {customers['is_churned'].value_counts()[0]:,}")
-    print(f"Churned Customers: {customers['is_churned'].value_counts()[1]:,}")
+    churn_counts = customers['is_churned'].value_counts()
+    active_customers = churn_counts.get(0, 0)
+    churned_customers = churn_counts.get(1, 0)
+    print(f"Active Customers: {active_customers:,}")
+    print(f"Churned Customers: {churned_customers:,}")

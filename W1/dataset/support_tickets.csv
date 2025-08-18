@@ -1,0 +1,2001 @@
+ticket_id,customer_id,created_date,ticket_type,priority,status,resolution_time_hours
+1,1374,2025-03-26,Shipping Delay,Medium,Resolved,45.0
+2,4175,2025-06-18,Shipping Delay,Medium,Closed,19.0
+3,1115,2025-01-20,Account Problem,Low,In Progress,37.4
+4,3472,2024-12-24,Product Issue,Critical,Closed,16.2
+5,4203,2024-11-26,Product Issue,Medium,Resolved,33.0
+6,1331,2024-12-30,Refund Request,Low,Open,13.9
+7,4127,2024-10-17,Refund Request,High,Resolved,22.5
+8,36,2024-12-22,Product Issue,High,Closed,13.1
+9,2538,2025-05-13,Account Problem,Low,Resolved,4.9
+10,1132,2024-12-16,General Inquiry,Medium,Resolved,4.0
+11,2174,2024-09-23,Account Problem,Low,Open,5.2
+12,294,2025-02-05,Account Problem,High,Resolved,27.0
+13,1906,2025-06-14,Account Problem,High,Closed,5.6
+14,2164,2025-01-15,Account Problem,Low,Closed,82.8
+15,95,2024-12-19,Product Issue,Medium,Closed,47.4
+16,1269,2025-01-25,Product Issue,Low,Closed,8.0
+17,1935,2025-05-22,Refund Request,High,In Progress,29.1
+18,2206,2025-04-12,General Inquiry,Low,Resolved,1.1
+19,1049,2025-03-22,Shipping Delay,Medium,Closed,19.5
+20,4823,2024-11-10,Account Problem,Medium,Closed,86.0
+21,4926,2025-01-27,Refund Request,Medium,Closed,67.0
+22,4146,2024-12-12,Product Issue,Medium,Resolved,16.5
+23,1164,2025-07-12,Product Issue,High,Resolved,5.9
+24,2108,2025-04-07,Refund Request,Low,Closed,8.9
+25,1174,2025-08-17,Refund Request,Low,Closed,12.0
+26,3852,2024-12-20,Refund Request,Low,Resolved,6.2
+27,4742,2024-08-27,Product Issue,Medium,Resolved,73.6
+28,4539,2025-07-04,Product Issue,Low,Closed,11.8
+29,1339,2025-04-06,Refund Request,Low,Closed,81.8
+30,3497,2025-04-28,Shipping Delay,Medium,Resolved,1.8
+31,1574,2025-07-22,General Inquiry,Low,Closed,40.5
+32,3609,2024-10-24,Refund Request,Low,Resolved,55.2
+33,1208,2025-01-22,Product Issue,Medium,In Progress,14.2
+34,1874,2024-10-13,Refund Request,Low,Resolved,25.6
+35,232,2025-03-03,Shipping Delay,Low,Closed,5.2
+36,1335,2025-08-12,Product Issue,Low,In Progress,5.3
+37,465,2025-04-13,Refund Request,Medium,Closed,20.7
+38,3459,2025-06-27,Shipping Delay,Medium,Closed,13.6
+39,4580,2025-02-20,General Inquiry,Low,In Progress,39.9
+40,3965,2025-01-07,Refund Request,Medium,Closed,6.4
+41,3575,2025-05-06,General Inquiry,Low,In Progress,28.9
+42,2135,2025-02-23,Refund Request,Medium,Resolved,67.6
+43,4449,2024-10-15,Account Problem,High,Closed,24.7
+44,4926,2024-09-09,Account Problem,High,Resolved,85.0
+45,3485,2025-05-27,General Inquiry,Low,Resolved,31.8
+46,4702,2025-05-01,Account Problem,Low,In Progress,15.6
+47,393,2025-05-26,Refund Request,Low,Closed,0.2
+48,2768,2024-10-30,General Inquiry,Medium,Closed,12.3
+49,4902,2025-05-20,Product Issue,High,Closed,81.4
+50,302,2025-08-01,Shipping Delay,Medium,Resolved,23.2
+51,1352,2024-09-24,General Inquiry,Medium,Closed,10.9
+52,3918,2024-12-06,Shipping Delay,High,Resolved,2.7
+53,2754,2025-05-12,Account Problem,Low,In Progress,0.6
+54,4441,2024-11-01,Product Issue,High,Resolved,43.6
+55,1471,2025-07-15,Account Problem,Low,In Progress,28.9
+56,3604,2024-08-20,Product Issue,Medium,Resolved,24.9
+57,1620,2025-01-21,Account Problem,Critical,In Progress,14.7
+58,1547,2024-09-25,Refund Request,Low,Resolved,29.7
+59,1887,2024-12-11,Refund Request,Medium,Closed,34.5
+60,2453,2024-11-16,Refund Request,Medium,In Progress,0.9
+61,4037,2025-06-28,General Inquiry,Low,Closed,7.7
+62,4672,2024-10-24,Refund Request,Low,In Progress,28.6
+63,3043,2025-03-03,General Inquiry,Medium,Resolved,4.1
+64,4351,2025-02-27,Account Problem,Low,Closed,1.8
+65,620,2025-01-06,Account Problem,Medium,Resolved,25.0
+66,4310,2025-08-17,Shipping Delay,Medium,Closed,22.9
+67,3570,2025-03-10,Refund Request,Low,Resolved,12.1
+68,1202,2025-03-29,Account Problem,High,Closed,22.9
+69,1814,2025-04-15,Account Problem,Medium,Resolved,2.6
+70,241,2024-12-07,Refund Request,Low,Resolved,29.5
+71,2022,2025-02-08,General Inquiry,Medium,Resolved,53.1
+72,574,2024-09-01,Refund Request,Low,Closed,18.0
+73,4204,2025-04-06,Refund Request,Low,In Progress,7.7
+74,2690,2025-04-29,General Inquiry,Low,Closed,64.1
+75,716,2025-03-31,Refund Request,Low,Resolved,16.0
+76,4851,2025-06-28,Account Problem,Low,Closed,13.0
+77,2331,2024-08-25,Account Problem,Low,Resolved,3.2
+78,3857,2025-01-24,Account Problem,Low,In Progress,11.7
+79,77,2025-04-06,Shipping Delay,High,Open,14.7
+80,1533,2025-03-28,Refund Request,Medium,Closed,4.9
+81,126,2025-05-27,Account Problem,High,Closed,69.4
+82,3922,2025-06-01,Product Issue,Low,Resolved,116.4
+83,3854,2025-03-17,General Inquiry,High,Resolved,5.9
+84,690,2024-09-30,Product Issue,Low,Closed,31.5
+85,4749,2025-03-19,Shipping Delay,Low,In Progress,5.2
+86,4902,2025-03-24,General Inquiry,Low,Open,18.5
+87,2956,2024-10-05,Shipping Delay,Medium,Closed,16.6
+88,4809,2024-11-11,General Inquiry,Low,Closed,9.7
+89,890,2025-06-19,Shipping Delay,Low,In Progress,2.4
+90,2470,2025-07-10,Account Problem,Medium,Resolved,1.7
+91,320,2025-02-16,Account Problem,Medium,Closed,17.5
+92,4519,2024-09-13,Refund Request,High,In Progress,34.7
+93,8,2024-09-09,Account Problem,Low,Closed,21.5
+94,4742,2024-11-25,General Inquiry,Low,Closed,61.5
+95,464,2024-12-12,General Inquiry,Medium,Closed,21.5
+96,4690,2025-03-29,Account Problem,Low,Closed,10.4
+97,3865,2024-09-08,Refund Request,Low,Closed,16.7
+98,1978,2025-02-25,Account Problem,Medium,Closed,40.4
+99,4188,2024-09-23,Refund Request,Low,Closed,30.7
+100,2737,2025-04-29,Product Issue,High,Resolved,115.0
+101,3062,2024-09-26,Account Problem,High,In Progress,43.6
+102,3110,2024-11-11,Account Problem,Low,Closed,14.3
+103,1076,2025-04-30,Refund Request,Medium,Closed,32.5
+104,375,2025-01-27,Shipping Delay,Low,Resolved,4.1
+105,2674,2024-11-23,Product Issue,Low,In Progress,50.8
+106,4147,2025-01-28,Product Issue,Critical,Resolved,31.6
+107,1062,2025-03-14,Shipping Delay,Low,Resolved,2.8
+108,172,2025-04-12,Account Problem,Critical,Resolved,12.9
+109,3885,2024-09-06,Refund Request,Low,In Progress,61.6
+110,3862,2025-07-23,Shipping Delay,Low,Closed,21.2
+111,819,2025-01-13,Product Issue,Low,Closed,31.8
+112,4411,2025-05-19,Shipping Delay,Medium,Resolved,10.6
+113,2742,2025-03-11,Shipping Delay,Low,Closed,4.5
+114,1757,2025-08-01,General Inquiry,Low,Closed,2.6
+115,3123,2025-03-09,Refund Request,Medium,Resolved,14.0
+116,1405,2025-02-14,Shipping Delay,Low,Closed,17.2
+117,4237,2025-03-04,Account Problem,High,Closed,11.9
+118,1757,2024-12-16,Refund Request,High,Closed,17.2
+119,2349,2025-03-14,Refund Request,Medium,Resolved,28.4
+120,1236,2025-08-12,General Inquiry,High,Open,15.5
+121,2896,2024-08-26,Refund Request,Medium,Open,58.7
+122,771,2024-10-29,Refund Request,Medium,In Progress,4.8
+123,4890,2025-04-06,General Inquiry,High,Resolved,21.5
+124,1451,2024-09-25,Refund Request,Medium,Closed,3.7
+125,4743,2024-10-11,Account Problem,Medium,Closed,17.9
+126,4814,2025-04-24,Account Problem,Low,In Progress,4.9
+127,3075,2025-06-24,Account Problem,Medium,Closed,3.3
+128,910,2025-02-11,Shipping Delay,Medium,Closed,6.3
+129,3598,2025-06-22,Account Problem,High,In Progress,22.6
+130,4235,2025-07-12,Product Issue,High,In Progress,24.7
+131,4921,2025-02-20,Product Issue,High,Resolved,57.0
+132,4044,2025-04-13,Product Issue,Low,Closed,1.7
+133,4906,2025-06-18,General Inquiry,High,Open,7.5
+134,86,2024-08-31,General Inquiry,High,Resolved,40.6
+135,3586,2024-12-25,General Inquiry,Low,Closed,4.0
+136,541,2024-10-30,Refund Request,High,Closed,25.4
+137,1613,2025-05-04,Refund Request,High,Closed,4.9
+138,3190,2025-03-15,Shipping Delay,Low,Closed,9.5
+139,3940,2025-06-01,Refund Request,Medium,Resolved,59.9
+140,401,2025-02-27,Refund Request,Low,Closed,37.1
+141,292,2024-12-24,Shipping Delay,Low,Open,4.4
+142,765,2024-09-15,Product Issue,High,Resolved,21.5
+143,3765,2025-05-23,Shipping Delay,Medium,Closed,6.2
+144,1913,2025-05-12,Account Problem,Medium,Closed,31.3
+145,2352,2025-03-01,Shipping Delay,High,Closed,9.2
+146,908,2025-05-13,Shipping Delay,Critical,Closed,11.2
+147,4459,2025-07-06,General Inquiry,Medium,Resolved,6.4
+148,4268,2025-04-16,General Inquiry,Low,Open,32.2
+149,1257,2024-12-27,Account Problem,Medium,Closed,39.4
+150,4870,2024-11-07,Refund Request,Low,Closed,9.1
+151,1064,2025-05-27,Account Problem,Medium,Closed,59.9
+152,3663,2025-06-08,Account Problem,Low,Closed,13.0
+153,3189,2024-11-22,Refund Request,Critical,Resolved,36.1
+154,1735,2024-10-26,Refund Request,Low,Resolved,47.1
+155,3308,2025-07-08,Account Problem,Medium,Closed,7.4
+156,1321,2025-03-29,Account Problem,Critical,In Progress,0.1
+157,4659,2025-02-08,Shipping Delay,Low,Resolved,76.5
+158,3419,2025-04-23,General Inquiry,Medium,Open,14.4
+159,1817,2024-09-06,Account Problem,Low,Open,48.3
+160,2938,2024-11-14,Product Issue,Low,Resolved,1.5
+161,4015,2025-03-25,Refund Request,Low,Resolved,14.9
+162,4370,2025-06-01,Account Problem,Low,Closed,10.6
+163,1354,2025-08-02,Product Issue,Critical,Closed,3.2
+164,4098,2025-02-12,Refund Request,Medium,Closed,53.0
+165,1682,2025-05-28,Refund Request,Medium,In Progress,50.6
+166,3898,2025-06-08,General Inquiry,Low,Closed,8.3
+167,2743,2025-06-17,Account Problem,Medium,Resolved,8.7
+168,1545,2025-02-24,Shipping Delay,Low,Closed,67.7
+169,1030,2024-11-03,General Inquiry,High,Resolved,26.7
+170,4355,2024-11-15,Product Issue,Low,Closed,72.9
+171,681,2025-03-04,General Inquiry,Low,Resolved,7.4
+172,1427,2024-08-18,Refund Request,High,Resolved,15.1
+173,2447,2025-07-19,Product Issue,High,Resolved,38.1
+174,2484,2024-08-28,General Inquiry,High,Closed,10.2
+175,794,2024-11-23,Shipping Delay,Medium,Resolved,28.4
+176,4021,2025-08-03,Refund Request,Medium,Resolved,4.4
+177,575,2024-09-21,Shipping Delay,Medium,Open,55.4
+178,807,2024-11-24,General Inquiry,Low,Closed,6.2
+179,2897,2025-05-03,Product Issue,Low,Resolved,6.7
+180,3482,2025-06-28,Account Problem,High,Closed,103.4
+181,317,2024-10-31,Account Problem,Low,Closed,21.8
+182,177,2024-10-20,Account Problem,Medium,Closed,1.8
+183,2925,2025-04-27,Product Issue,Low,Closed,8.9
+184,4591,2025-08-04,Shipping Delay,Low,Closed,2.6
+185,4489,2025-08-01,Refund Request,Medium,Resolved,77.6
+186,2300,2025-06-13,Refund Request,High,In Progress,46.2
+187,2698,2025-05-13,General Inquiry,High,Closed,0.9
+188,3523,2025-01-26,Shipping Delay,Low,In Progress,30.2
+189,3307,2025-05-27,General Inquiry,Critical,Resolved,5.3
+190,557,2025-05-10,Account Problem,High,In Progress,15.8
+191,2047,2025-04-24,Shipping Delay,High,In Progress,34.2
+192,4594,2025-08-17,General Inquiry,Medium,Open,2.5
+193,4575,2025-04-11,Product Issue,Medium,Resolved,51.8
+194,1446,2025-07-27,Shipping Delay,Low,Open,0.6
+195,1162,2024-12-16,Account Problem,Critical,Open,37.7
+196,480,2025-04-20,Refund Request,Medium,Resolved,29.2
+197,4565,2024-12-11,Account Problem,Medium,Closed,79.0
+198,17,2024-10-03,Refund Request,Medium,Open,33.1
+199,1035,2025-06-17,Product Issue,Low,Closed,8.3
+200,4945,2024-08-20,Refund Request,Low,Resolved,12.0
+201,3703,2025-07-02,Shipping Delay,High,Closed,34.1
+202,4397,2024-11-27,Shipping Delay,Low,Closed,38.3
+203,30,2025-06-10,General Inquiry,Low,Closed,3.8
+204,445,2024-10-07,Product Issue,High,Resolved,40.0
+205,817,2024-11-04,Shipping Delay,Low,In Progress,29.8
+206,1235,2025-06-29,General Inquiry,High,Closed,12.5
+207,2599,2024-10-10,Shipping Delay,Low,Resolved,8.1
+208,2067,2025-08-13,Account Problem,Low,Resolved,9.9
+209,1512,2024-08-22,Shipping Delay,Low,Open,22.6
+210,445,2024-08-30,General Inquiry,Low,Closed,39.4
+211,4529,2025-07-30,Account Problem,Low,Closed,13.0
+212,591,2025-05-14,Shipping Delay,Medium,Resolved,38.0
+213,2999,2025-07-21,General Inquiry,Low,Closed,33.6
+214,1367,2025-05-09,General Inquiry,Medium,In Progress,33.3
+215,2543,2025-03-19,Account Problem,High,Resolved,0.1
+216,1142,2025-01-14,Refund Request,Low,Closed,15.6
+217,2423,2025-01-05,Shipping Delay,High,Closed,68.6
+218,3410,2025-03-17,Refund Request,Medium,Closed,1.5
+219,980,2025-01-09,Shipping Delay,High,Resolved,27.2
+220,3020,2024-10-23,Shipping Delay,High,Resolved,22.0
+221,653,2025-05-14,General Inquiry,Low,Closed,6.6
+222,1784,2025-08-04,Product Issue,Low,Resolved,10.3
+223,4829,2025-05-13,Product Issue,High,Closed,24.1
+224,1098,2024-10-29,Account Problem,High,Resolved,31.3
+225,4544,2025-08-16,Account Problem,Medium,Resolved,12.7
+226,3835,2024-11-11,Product Issue,High,Resolved,24.6
+227,3376,2024-11-25,Account Problem,Low,Closed,8.1
+228,1740,2025-03-23,Refund Request,High,In Progress,2.9
+229,3140,2025-02-21,General Inquiry,High,Open,30.4
+230,3902,2025-03-08,Refund Request,Low,Closed,5.9
+231,1166,2024-09-12,Product Issue,Low,In Progress,22.1
+232,258,2025-04-13,General Inquiry,Low,Resolved,21.3
+233,2400,2024-11-13,General Inquiry,High,Resolved,38.5
+234,3614,2024-12-10,General Inquiry,Medium,Resolved,4.6
+235,2725,2025-07-16,Account Problem,Medium,Resolved,3.9
+236,4862,2024-10-20,Shipping Delay,Medium,Open,35.8
+237,2210,2025-07-31,Product Issue,Low,Resolved,5.7
+238,582,2024-09-22,Product Issue,Low,Closed,83.5
+239,2696,2024-09-10,General Inquiry,Medium,Closed,50.4
+240,441,2025-08-01,Shipping Delay,Low,Closed,21.4
+241,2848,2024-12-05,General Inquiry,Low,Resolved,4.9
+242,3766,2025-02-03,Refund Request,Medium,Resolved,10.6
+243,2260,2025-04-24,Refund Request,Low,Open,59.3
+244,1077,2024-12-04,Account Problem,Medium,Closed,1.1
+245,4010,2025-01-18,Product Issue,Low,Resolved,45.4
+246,4505,2025-02-15,Refund Request,Low,In Progress,6.3
+247,4788,2024-12-17,General Inquiry,Medium,Resolved,3.8
+248,1472,2025-07-16,Refund Request,Medium,In Progress,128.6
+249,3579,2025-07-31,Refund Request,Low,Resolved,112.7
+250,2512,2025-02-21,Account Problem,Low,In Progress,19.9
+251,3601,2024-11-10,Product Issue,Low,Closed,32.3
+252,1019,2024-10-21,Shipping Delay,High,Resolved,142.8
+253,3543,2025-05-16,Account Problem,Medium,In Progress,9.8
+254,2029,2024-12-17,Product Issue,Low,Resolved,2.2
+255,4672,2024-09-18,Refund Request,High,Resolved,30.3
+256,3230,2025-05-19,Account Problem,Low,Closed,5.9
+257,807,2025-04-17,General Inquiry,Critical,Closed,10.8
+258,4654,2024-11-22,General Inquiry,Medium,Resolved,16.5
+259,3529,2024-09-28,Refund Request,Low,Resolved,14.9
+260,4256,2024-12-24,Account Problem,Low,Closed,9.6
+261,1117,2025-07-25,Refund Request,Critical,Resolved,51.0
+262,1402,2025-01-27,Shipping Delay,Low,Closed,7.6
+263,287,2024-09-13,General Inquiry,Medium,Closed,53.9
+264,1793,2025-02-10,Shipping Delay,Medium,Closed,4.7
+265,4093,2025-08-12,Refund Request,High,In Progress,5.4
+266,495,2024-10-29,General Inquiry,High,Resolved,81.0
+267,4720,2025-07-18,Refund Request,Medium,Resolved,9.6
+268,2032,2024-09-19,Refund Request,Low,Closed,10.7
+269,205,2024-10-24,Shipping Delay,Low,Resolved,4.4
+270,3288,2024-12-03,General Inquiry,Medium,Closed,0.9
+271,2345,2024-11-12,Shipping Delay,High,Resolved,8.8
+272,4351,2024-10-14,Refund Request,High,In Progress,6.2
+273,4905,2024-09-30,Product Issue,Medium,In Progress,39.3
+274,4355,2025-05-27,Account Problem,Low,Resolved,20.2
+275,3069,2025-03-30,General Inquiry,Low,Resolved,43.6
+276,1223,2025-02-10,Shipping Delay,High,Resolved,37.5
+277,3336,2025-03-27,Refund Request,Medium,Closed,1.1
+278,2588,2024-10-15,Product Issue,Low,Closed,5.2
+279,2398,2024-11-23,General Inquiry,Low,Resolved,29.3
+280,2836,2025-02-16,Account Problem,Low,Resolved,26.3
+281,3999,2025-06-27,Refund Request,Low,In Progress,3.3
+282,3236,2025-05-14,Account Problem,Medium,Resolved,0.6
+283,1238,2025-05-15,Product Issue,Low,Open,3.7
+284,2475,2025-01-18,Shipping Delay,Medium,Closed,22.0
+285,2056,2024-09-30,General Inquiry,Low,Closed,22.4
+286,1473,2025-02-12,Account Problem,Medium,Resolved,85.8
+287,4316,2024-12-01,Product Issue,Low,Closed,5.6
+288,4216,2024-09-04,General Inquiry,Low,Closed,16.4
+289,2141,2024-11-13,General Inquiry,Low,Closed,22.4
+290,4859,2024-12-22,Product Issue,High,Resolved,10.8
+291,3912,2025-04-21,General Inquiry,Medium,Open,6.4
+292,3345,2025-05-20,Shipping Delay,High,In Progress,93.6
+293,1691,2024-11-04,Shipping Delay,Medium,In Progress,7.1
+294,2,2025-05-18,Shipping Delay,Low,Closed,7.6
+295,4700,2024-08-31,Account Problem,Low,In Progress,1.8
+296,1677,2024-09-01,Refund Request,High,Closed,13.9
+297,329,2025-06-11,Product Issue,High,Resolved,0.7
+298,2583,2024-12-24,General Inquiry,Low,Resolved,15.6
+299,3525,2025-08-05,Product Issue,High,Closed,24.9
+300,4389,2025-01-12,Refund Request,Low,In Progress,12.1
+301,242,2025-03-07,Refund Request,Medium,Resolved,74.0
+302,3440,2024-11-30,Product Issue,High,Resolved,14.9
+303,2143,2024-10-04,Shipping Delay,Medium,In Progress,1.2
+304,1162,2025-07-15,Account Problem,Low,Closed,10.6
+305,1555,2025-02-07,Account Problem,High,In Progress,13.5
+306,3862,2024-10-16,General Inquiry,Medium,Closed,9.2
+307,2938,2025-02-23,Shipping Delay,Critical,Resolved,145.4
+308,827,2024-11-06,Account Problem,Low,Closed,0.8
+309,247,2024-11-30,Account Problem,Critical,In Progress,28.0
+310,252,2024-09-07,Shipping Delay,High,In Progress,9.6
+311,2792,2025-01-15,Refund Request,Low,In Progress,64.9
+312,56,2025-03-24,General Inquiry,Low,In Progress,2.0
+313,49,2025-07-07,Account Problem,Low,In Progress,17.9
+314,625,2025-08-03,Shipping Delay,Medium,Resolved,15.9
+315,3879,2025-02-23,Account Problem,Critical,Closed,48.2
+316,2080,2025-06-27,General Inquiry,Low,Closed,57.1
+317,3474,2024-12-23,Refund Request,Low,Closed,5.2
+318,2916,2024-11-27,Product Issue,Medium,In Progress,28.4
+319,4502,2024-10-01,Product Issue,High,Closed,20.1
+320,4975,2024-11-13,Product Issue,High,Closed,16.7
+321,1199,2025-06-13,Refund Request,High,Open,1.9
+322,3023,2024-10-26,Shipping Delay,Low,Resolved,11.5
+323,3767,2025-01-13,Shipping Delay,High,Closed,30.3
+324,3001,2024-10-31,Account Problem,High,Resolved,69.9
+325,4758,2025-05-23,Account Problem,Medium,Closed,2.8
+326,481,2025-05-19,Refund Request,Low,Closed,16.0
+327,4590,2024-08-19,Shipping Delay,Medium,Open,29.3
+328,3728,2025-08-06,Refund Request,Critical,Closed,14.1
+329,295,2025-07-14,Refund Request,Medium,Resolved,0.8
+330,4015,2025-07-16,Refund Request,High,In Progress,14.2
+331,2876,2025-05-03,Product Issue,Medium,Resolved,36.9
+332,1705,2025-08-15,General Inquiry,High,Closed,3.8
+333,454,2024-09-25,Shipping Delay,High,Resolved,72.4
+334,3646,2025-06-25,Account Problem,Medium,Resolved,6.6
+335,4876,2025-06-19,Shipping Delay,Low,Resolved,3.6
+336,1684,2025-07-06,Account Problem,Low,Resolved,26.7
+337,832,2024-12-19,Account Problem,Medium,Open,8.6
+338,4882,2025-08-12,Shipping Delay,Low,Closed,35.6
+339,505,2024-09-07,General Inquiry,Low,Closed,24.8
+340,2191,2025-08-05,Account Problem,Low,Closed,9.4
+341,1063,2025-03-19,Shipping Delay,Low,Closed,14.7
+342,2332,2025-04-22,General Inquiry,Medium,In Progress,32.8
+343,2710,2025-06-05,General Inquiry,High,Resolved,41.5
+344,1150,2025-03-29,Refund Request,Critical,Resolved,10.7
+345,2765,2024-10-07,General Inquiry,Medium,In Progress,48.8
+346,2947,2024-10-07,Shipping Delay,Low,Open,38.8
+347,1963,2025-04-12,Product Issue,Medium,Closed,20.8
+348,4904,2025-02-28,Product Issue,Low,Resolved,9.2
+349,4199,2024-11-03,Refund Request,Low,In Progress,48.3
+350,2837,2024-09-03,Refund Request,High,Resolved,16.0
+351,1840,2025-04-03,Shipping Delay,Medium,Resolved,12.8
+352,3754,2024-10-14,Refund Request,Medium,Closed,1.7
+353,2132,2024-10-12,Product Issue,Medium,Resolved,8.9
+354,820,2024-09-15,Shipping Delay,Low,In Progress,42.5
+355,1847,2025-06-09,Shipping Delay,Low,Open,3.3
+356,2984,2024-11-12,General Inquiry,Low,Closed,23.0
+357,2910,2024-11-05,Product Issue,Low,In Progress,34.1
+358,2795,2025-07-24,Product Issue,Low,In Progress,17.0
+359,2215,2025-02-13,Product Issue,Low,Closed,1.5
+360,582,2024-08-28,Account Problem,High,Resolved,4.7
+361,4270,2024-11-23,Refund Request,Medium,Resolved,79.2
+362,691,2025-05-03,Refund Request,Medium,Closed,113.2
+363,4494,2024-12-20,General Inquiry,Medium,Closed,5.5
+364,1906,2025-06-19,Product Issue,High,In Progress,22.4
+365,695,2025-05-15,Product Issue,Medium,Closed,22.1
+366,1680,2024-09-02,Account Problem,Low,Resolved,10.5
+367,393,2024-11-09,Product Issue,Medium,Closed,37.0
+368,767,2025-04-25,General Inquiry,Low,In Progress,152.3
+369,4594,2025-03-04,Shipping Delay,Low,In Progress,4.0
+370,4411,2025-01-23,Account Problem,Medium,Closed,55.6
+371,4577,2024-08-23,Refund Request,Low,Resolved,86.9
+372,100,2025-02-25,General Inquiry,Medium,Resolved,39.3
+373,4023,2024-10-19,Account Problem,Low,Resolved,2.5
+374,3000,2025-04-14,Account Problem,High,Resolved,8.3
+375,699,2024-12-11,Refund Request,Medium,Open,21.8
+376,1060,2024-10-31,General Inquiry,Low,Closed,18.5
+377,3644,2024-08-30,General Inquiry,Low,Closed,75.1
+378,2727,2025-01-23,Refund Request,Low,Resolved,44.6
+379,1905,2024-10-10,Account Problem,Medium,In Progress,49.8
+380,2154,2025-02-28,General Inquiry,Medium,Resolved,61.0
+381,647,2025-02-10,Account Problem,Critical,In Progress,3.2
+382,3252,2024-10-28,Shipping Delay,Low,Resolved,12.3
+383,2367,2025-06-12,Product Issue,Medium,Open,47.5
+384,684,2024-12-01,Shipping Delay,Low,In Progress,8.8
+385,1886,2024-12-25,General Inquiry,Low,Resolved,36.5
+386,1048,2024-10-03,Shipping Delay,Medium,Open,6.1
+387,4830,2024-10-09,Shipping Delay,Low,Closed,21.7
+388,1375,2025-03-27,Shipping Delay,Low,Resolved,56.6
+389,1215,2025-01-07,Product Issue,High,Open,9.4
+390,2731,2025-07-03,Shipping Delay,High,Resolved,4.2
+391,2032,2024-10-01,Account Problem,Low,Closed,12.2
+392,47,2025-04-12,General Inquiry,Medium,Closed,2.0
+393,1102,2025-02-04,Product Issue,Low,Resolved,3.2
+394,328,2025-05-05,Product Issue,Medium,Closed,43.2
+395,3769,2025-05-09,Refund Request,High,In Progress,35.0
+396,4183,2024-10-12,General Inquiry,Low,Resolved,18.7
+397,4646,2025-03-13,Product Issue,Low,Closed,2.0
+398,4258,2025-05-28,Product Issue,Medium,Closed,14.4
+399,342,2024-12-25,General Inquiry,Low,Closed,27.7
+400,2656,2024-12-24,Shipping Delay,Low,Closed,8.7
+401,273,2025-03-15,Refund Request,Low,Closed,23.7
+402,2512,2025-01-12,Shipping Delay,High,In Progress,17.4
+403,4296,2025-02-26,Account Problem,Medium,Resolved,1.2
+404,1098,2025-04-16,Refund Request,Low,Resolved,12.5
+405,2144,2025-05-23,General Inquiry,Medium,Open,41.1
+406,4104,2024-11-18,Refund Request,High,In Progress,2.6
+407,2908,2024-10-02,Account Problem,Low,Closed,63.2
+408,2665,2025-01-11,General Inquiry,Low,Closed,43.8
+409,785,2025-08-03,Account Problem,Medium,Closed,9.8
+410,572,2025-07-22,Refund Request,Medium,Closed,8.2
+411,2702,2024-09-01,Shipping Delay,High,Closed,34.9
+412,1349,2025-04-24,Account Problem,Low,Open,36.4
+413,3751,2024-10-15,Product Issue,Medium,Resolved,26.9
+414,4607,2025-02-16,Product Issue,Critical,Open,7.8
+415,2181,2025-03-04,Shipping Delay,High,Resolved,22.6
+416,2077,2025-01-29,Product Issue,High,Resolved,39.8
+417,1759,2024-11-01,General Inquiry,High,Resolved,35.1
+418,2036,2025-05-27,General Inquiry,Low,Closed,6.3
+419,1312,2025-05-22,Refund Request,Medium,Closed,19.7
+420,1429,2024-12-09,General Inquiry,Medium,Closed,23.7
+421,900,2025-03-12,Refund Request,High,Resolved,12.7
+422,4520,2025-08-11,Product Issue,High,Resolved,38.0
+423,930,2025-02-04,General Inquiry,Medium,Closed,53.1
+424,3521,2025-06-29,Refund Request,Low,Closed,30.5
+425,3990,2025-01-26,Product Issue,Low,Closed,39.6
+426,4371,2025-06-15,Product Issue,Medium,Closed,18.5
+427,886,2025-07-24,Product Issue,Low,Closed,17.6
+428,4349,2025-01-04,General Inquiry,Low,Open,18.4
+429,724,2025-05-23,Refund Request,Medium,Resolved,84.3
+430,4415,2025-01-16,Shipping Delay,Medium,Open,17.3
+431,490,2025-08-07,Account Problem,Low,In Progress,8.0
+432,4886,2025-06-02,Product Issue,Critical,In Progress,10.7
+433,2760,2024-09-23,Product Issue,High,Resolved,1.0
+434,527,2024-10-07,Refund Request,Medium,Closed,0.9
+435,84,2025-03-10,Refund Request,Medium,In Progress,32.2
+436,1579,2025-07-09,General Inquiry,Medium,Resolved,51.5
+437,1334,2024-09-07,General Inquiry,High,Resolved,3.1
+438,3565,2025-08-14,General Inquiry,High,Resolved,21.7
+439,1672,2025-01-22,Shipping Delay,Medium,Resolved,9.4
+440,1273,2025-04-09,Shipping Delay,High,Resolved,11.8
+441,2830,2025-07-09,Shipping Delay,Critical,Resolved,0.2
+442,3011,2025-07-30,Account Problem,Critical,In Progress,27.0
+443,3363,2024-12-30,Refund Request,High,Closed,10.8
+444,1612,2025-08-13,Refund Request,Low,Closed,7.2
+445,2423,2024-12-18,General Inquiry,High,Resolved,13.2
+446,2789,2025-06-17,Shipping Delay,Medium,Closed,4.6
+447,3590,2025-06-13,Product Issue,Low,In Progress,6.5
+448,1752,2024-10-17,Product Issue,Low,Closed,12.1
+449,1346,2025-07-25,Shipping Delay,High,Closed,22.3
+450,1108,2024-10-04,Product Issue,High,Closed,12.7
+451,2746,2024-09-26,Refund Request,Medium,Closed,34.7
+452,1332,2024-08-30,Product Issue,Medium,Closed,64.4
+453,2140,2025-05-14,General Inquiry,Low,In Progress,37.4
+454,2721,2025-07-02,General Inquiry,Medium,In Progress,21.0
+455,846,2025-04-05,General Inquiry,Medium,Closed,56.1
+456,193,2025-06-08,Product Issue,Medium,Resolved,20.7
+457,161,2024-12-23,Account Problem,Low,Closed,50.7
+458,1808,2024-11-07,Product Issue,Critical,Resolved,4.2
+459,2761,2024-09-16,General Inquiry,Low,Resolved,10.0
+460,129,2025-01-18,Account Problem,Medium,Closed,11.2
+461,2635,2025-07-15,Shipping Delay,Low,Resolved,5.5
+462,4454,2024-09-28,Account Problem,High,In Progress,15.8
+463,3265,2024-12-24,Account Problem,Medium,Closed,7.6
+464,1734,2025-01-12,General Inquiry,Medium,Closed,20.7
+465,4875,2025-06-27,General Inquiry,Critical,Resolved,28.2
+466,272,2025-01-15,Account Problem,Low,Resolved,70.4
+467,3928,2025-02-16,Account Problem,Low,In Progress,0.1
+468,4034,2025-05-22,Account Problem,Low,Closed,3.0
+469,1190,2025-03-19,Account Problem,Low,In Progress,111.4
+470,2869,2025-05-09,General Inquiry,Low,Resolved,95.0
+471,4002,2024-12-26,Refund Request,Medium,Resolved,38.0
+472,4514,2025-04-12,Refund Request,High,Closed,8.9
+473,3897,2025-02-05,Refund Request,Low,Resolved,8.0
+474,1543,2025-06-05,General Inquiry,Low,Resolved,16.7
+475,2793,2024-09-26,Shipping Delay,Medium,Resolved,50.2
+476,3824,2024-11-06,General Inquiry,Medium,Resolved,7.8
+477,4793,2024-11-29,Refund Request,Low,Resolved,11.5
+478,3081,2024-09-14,Shipping Delay,High,Resolved,34.6
+479,1826,2024-09-30,Shipping Delay,Critical,Open,5.4
+480,3811,2025-07-05,Refund Request,Medium,Resolved,40.3
+481,94,2024-10-06,Refund Request,High,Closed,51.7
+482,1159,2025-04-09,Shipping Delay,Medium,Open,15.5
+483,4494,2024-10-13,Refund Request,Medium,Resolved,7.6
+484,3563,2025-04-19,General Inquiry,Medium,Resolved,33.9
+485,4325,2025-03-13,Shipping Delay,Medium,Closed,24.7
+486,603,2025-05-09,Account Problem,High,Closed,26.6
+487,3352,2025-07-09,General Inquiry,Low,Closed,6.3
+488,1267,2025-03-06,Product Issue,Medium,Closed,41.8
+489,2020,2024-09-12,Product Issue,Low,In Progress,35.8
+490,335,2024-08-20,Refund Request,Low,Resolved,26.5
+491,4610,2024-11-29,General Inquiry,Low,Resolved,15.2
+492,1886,2024-10-21,Refund Request,Medium,Resolved,5.2
+493,3835,2025-07-13,General Inquiry,Medium,Closed,16.2
+494,3021,2024-11-07,Shipping Delay,High,Closed,1.3
+495,4971,2025-03-18,Refund Request,Low,Open,27.0
+496,1044,2025-04-18,General Inquiry,Low,In Progress,13.6
+497,918,2025-05-04,Product Issue,Low,Closed,45.9
+498,2169,2024-12-21,Refund Request,Low,Closed,1.3
+499,1634,2025-04-17,Refund Request,Low,Closed,44.5
+500,2058,2024-10-26,General Inquiry,Low,Open,21.0
+501,32,2024-11-23,Shipping Delay,High,Resolved,18.2
+502,4843,2025-02-08,Refund Request,Low,Resolved,3.2
+503,4240,2025-04-14,General Inquiry,Low,In Progress,21.8
+504,3433,2025-01-19,Account Problem,Low,Closed,3.1
+505,371,2024-12-19,Account Problem,Low,Closed,3.1
+506,3387,2025-05-11,Product Issue,Medium,Open,17.9
+507,1709,2025-07-06,Shipping Delay,Low,Resolved,40.7
+508,2995,2025-01-02,General Inquiry,High,Resolved,95.6
+509,3523,2024-12-07,Account Problem,Low,Open,8.2
+510,343,2025-01-02,Shipping Delay,Medium,Closed,6.5
+511,299,2024-09-02,Refund Request,High,Resolved,11.6
+512,2324,2025-06-26,Refund Request,Critical,Resolved,16.3
+513,168,2025-02-27,General Inquiry,Low,Resolved,31.6
+514,4285,2024-12-20,Product Issue,Low,Resolved,50.6
+515,2773,2024-12-20,General Inquiry,Medium,Open,74.8
+516,413,2024-11-26,Shipping Delay,Low,Closed,11.7
+517,2024,2025-03-15,General Inquiry,Medium,Resolved,1.0
+518,1675,2025-03-06,Account Problem,Low,Open,25.3
+519,340,2025-07-26,General Inquiry,Low,Resolved,31.6
+520,1801,2024-12-25,Product Issue,Medium,Resolved,29.4
+521,4447,2025-04-07,Product Issue,High,In Progress,0.8
+522,2243,2025-03-04,General Inquiry,High,Resolved,0.9
+523,3161,2025-07-15,Account Problem,High,Closed,10.1
+524,4431,2025-07-01,Product Issue,High,In Progress,0.5
+525,3456,2025-04-19,Shipping Delay,Low,Closed,33.6
+526,3158,2025-06-13,Account Problem,Medium,Closed,15.7
+527,4794,2025-05-13,Shipping Delay,Medium,Closed,32.3
+528,792,2025-07-16,Product Issue,High,In Progress,42.3
+529,399,2024-09-03,Shipping Delay,Medium,Closed,28.9
+530,890,2025-01-14,Account Problem,High,Closed,1.0
+531,3786,2025-03-27,Refund Request,Medium,Closed,13.1
+532,3881,2024-09-05,Shipping Delay,Medium,In Progress,45.3
+533,1561,2024-12-13,Account Problem,High,Open,63.2
+534,4411,2024-11-18,General Inquiry,High,Closed,22.4
+535,4508,2025-03-30,Account Problem,Medium,In Progress,15.6
+536,4711,2025-06-17,Refund Request,Low,Closed,25.7
+537,1058,2025-03-18,Shipping Delay,Medium,Resolved,14.4
+538,928,2025-02-17,Account Problem,Low,Resolved,5.3
+539,1713,2025-03-05,Account Problem,Low,Resolved,39.8
+540,3240,2025-03-10,Refund Request,High,Resolved,4.5
+541,3829,2025-03-14,Shipping Delay,Critical,In Progress,0.4
+542,3198,2025-04-09,Account Problem,Medium,Closed,30.0
+543,634,2025-03-29,Product Issue,Medium,Resolved,28.7
+544,3865,2025-03-29,General Inquiry,High,Closed,11.9
+545,2527,2024-12-07,Shipping Delay,Medium,Open,28.1
+546,4782,2025-04-15,Refund Request,Low,Closed,43.7
+547,4446,2025-04-22,General Inquiry,Medium,In Progress,30.2
+548,150,2025-07-06,Shipping Delay,Low,Resolved,27.0
+549,2258,2025-03-16,Shipping Delay,Low,In Progress,35.0
+550,2214,2025-07-19,Refund Request,High,Resolved,3.7
+551,414,2025-07-28,Account Problem,High,Closed,5.5
+552,31,2024-12-13,Shipping Delay,Medium,In Progress,11.4
+553,2111,2025-06-11,Shipping Delay,Low,Resolved,39.6
+554,4202,2024-12-03,Shipping Delay,High,Resolved,31.0
+555,2949,2025-07-11,Shipping Delay,High,In Progress,108.1
+556,4828,2024-08-17,Product Issue,Medium,Resolved,19.0
+557,1418,2025-01-17,Shipping Delay,Low,Resolved,21.4
+558,1669,2024-09-01,Product Issue,Low,In Progress,6.5
+559,2705,2024-10-12,Account Problem,Medium,Closed,35.6
+560,748,2025-06-19,Account Problem,Medium,Resolved,45.9
+561,2788,2025-01-14,Refund Request,Medium,Resolved,10.7
+562,2746,2025-03-30,Refund Request,Medium,Resolved,11.2
+563,1491,2025-06-06,General Inquiry,Medium,Closed,53.4
+564,2263,2025-08-13,Refund Request,Medium,Closed,39.4
+565,3016,2024-08-30,General Inquiry,Medium,Resolved,39.9
+566,4708,2025-03-26,Refund Request,Medium,Closed,1.3
+567,4036,2025-04-20,Shipping Delay,Low,Closed,6.5
+568,1375,2025-01-06,Refund Request,High,Closed,16.7
+569,1541,2025-04-05,Shipping Delay,Medium,Resolved,2.4
+570,1471,2024-12-14,Account Problem,Low,Closed,2.0
+571,383,2024-09-04,Product Issue,Low,Closed,86.0
+572,221,2024-12-29,General Inquiry,Medium,Closed,15.8
+573,162,2025-05-07,Product Issue,Low,Open,6.7
+574,1654,2025-04-24,Refund Request,High,In Progress,8.3
+575,1294,2024-10-07,General Inquiry,Medium,Resolved,5.6
+576,2362,2024-09-26,Refund Request,Low,Resolved,1.5
+577,1580,2025-03-24,Refund Request,Low,Resolved,9.2
+578,1226,2025-03-09,General Inquiry,High,Closed,2.3
+579,2833,2025-03-27,General Inquiry,Medium,Resolved,17.2
+580,1598,2025-04-13,Product Issue,Low,Closed,31.3
+581,250,2024-08-24,Account Problem,High,Closed,31.3
+582,389,2024-10-28,Account Problem,High,Closed,11.4
+583,4289,2025-08-07,Account Problem,High,Closed,1.4
+584,1672,2024-08-17,Account Problem,Medium,Closed,74.3
+585,2933,2025-06-21,Shipping Delay,Medium,Resolved,9.4
+586,4866,2025-06-12,Refund Request,High,Open,9.6
+587,2911,2025-02-26,General Inquiry,Medium,Resolved,36.6
+588,3145,2025-02-13,General Inquiry,Low,In Progress,76.2
+589,3169,2025-02-26,Account Problem,Low,Closed,26.9
+590,4346,2024-10-31,Account Problem,Low,Resolved,74.9
+591,2503,2024-09-05,Product Issue,Medium,Resolved,18.8
+592,3409,2025-03-12,Product Issue,Medium,Closed,6.7
+593,2,2025-07-30,Shipping Delay,Low,Closed,34.4
+594,359,2025-02-28,Product Issue,High,Closed,0.5
+595,141,2025-07-24,Product Issue,Medium,Resolved,22.2
+596,274,2024-09-21,Product Issue,High,Resolved,34.0
+597,3713,2024-12-23,General Inquiry,Low,Resolved,31.8
+598,3820,2024-11-14,Account Problem,Low,Closed,17.0
+599,102,2024-08-24,Account Problem,Low,Resolved,14.4
+600,809,2024-10-19,Shipping Delay,High,Open,43.7
+601,1794,2025-03-30,General Inquiry,High,Closed,12.3
+602,4250,2024-11-10,Product Issue,High,Closed,2.1
+603,2244,2024-11-05,Product Issue,Low,Closed,7.8
+604,4418,2024-11-03,General Inquiry,Medium,Resolved,34.3
+605,1529,2025-01-14,General Inquiry,Medium,In Progress,10.4
+606,4675,2025-06-22,Refund Request,Low,Closed,13.1
+607,694,2025-08-04,Refund Request,Medium,Closed,3.6
+608,4223,2025-02-13,Product Issue,Low,Closed,19.3
+609,459,2025-02-07,General Inquiry,Medium,Resolved,36.7
+610,3376,2024-09-09,Account Problem,High,Open,23.4
+611,3046,2024-12-29,Product Issue,High,Closed,31.8
+612,3179,2024-10-10,Refund Request,Low,In Progress,16.8
+613,2256,2025-03-24,Account Problem,Medium,Closed,19.4
+614,1597,2025-02-24,Shipping Delay,Medium,Closed,26.4
+615,2460,2025-03-29,General Inquiry,High,Open,0.6
+616,2040,2024-10-09,Refund Request,Low,In Progress,47.4
+617,4642,2025-01-01,Account Problem,High,In Progress,30.5
+618,4512,2024-11-15,Refund Request,Medium,In Progress,28.2
+619,1983,2025-03-15,Refund Request,Low,Closed,73.2
+620,861,2024-12-14,General Inquiry,High,Closed,35.2
+621,3926,2024-09-25,Refund Request,Medium,Closed,49.0
+622,3681,2025-05-17,General Inquiry,Medium,In Progress,25.5
+623,2146,2025-06-15,Refund Request,High,Resolved,17.7
+624,4231,2024-10-12,Product Issue,Low,Resolved,19.0
+625,4607,2025-08-15,Shipping Delay,Low,Closed,20.0
+626,3187,2025-07-08,General Inquiry,High,Open,1.0
+627,3365,2025-05-14,Refund Request,Low,Closed,2.9
+628,4815,2025-02-07,Refund Request,Medium,Open,34.0
+629,4117,2025-04-02,Account Problem,Medium,Closed,9.7
+630,1099,2025-04-19,Account Problem,Low,Closed,60.0
+631,107,2024-09-26,Product Issue,Low,Closed,27.3
+632,611,2025-06-18,Refund Request,Medium,In Progress,16.1
+633,487,2024-11-12,Shipping Delay,High,Resolved,10.1
+634,2301,2024-10-11,Refund Request,Low,Closed,12.9
+635,4757,2025-01-09,General Inquiry,Low,In Progress,5.8
+636,195,2024-11-10,Product Issue,Medium,Closed,6.9
+637,3783,2025-08-09,Product Issue,Low,Resolved,5.2
+638,4167,2024-11-21,General Inquiry,High,Resolved,20.0
+639,4486,2024-10-10,Product Issue,Medium,Closed,3.0
+640,980,2025-05-16,Account Problem,High,Open,41.0
+641,1398,2025-01-02,Shipping Delay,Medium,Resolved,24.9
+642,1752,2025-03-06,General Inquiry,Medium,Closed,3.4
+643,2678,2025-06-07,General Inquiry,Low,Open,17.6
+644,2660,2025-03-22,General Inquiry,Low,Open,3.9
+645,78,2025-03-02,Refund Request,Low,Closed,7.1
+646,2444,2025-06-16,General Inquiry,Medium,Closed,19.8
+647,221,2024-11-25,Account Problem,Medium,Closed,14.0
+648,886,2025-06-12,General Inquiry,High,Resolved,10.9
+649,3780,2025-04-24,Shipping Delay,Medium,In Progress,41.1
+650,3271,2025-06-16,General Inquiry,Medium,Closed,10.0
+651,4675,2025-05-11,Product Issue,Medium,Closed,21.6
+652,3261,2024-08-23,Refund Request,Medium,Closed,30.6
+653,2512,2024-12-12,Account Problem,Low,Open,4.6
+654,707,2025-06-07,Account Problem,High,Resolved,8.1
+655,1440,2024-09-16,Refund Request,Low,Closed,13.7
+656,1343,2025-01-28,Product Issue,Low,Closed,34.0
+657,2799,2024-10-23,Product Issue,Medium,Closed,88.4
+658,2021,2025-02-21,Account Problem,High,Closed,11.3
+659,2193,2024-12-01,Refund Request,Low,In Progress,11.9
+660,2376,2024-10-24,Refund Request,High,Closed,1.2
+661,1417,2024-10-09,Account Problem,Low,Resolved,42.8
+662,1787,2024-09-23,Account Problem,Medium,Closed,60.4
+663,3927,2024-10-05,Account Problem,High,Resolved,7.4
+664,3504,2025-05-04,Shipping Delay,Medium,In Progress,51.2
+665,307,2025-07-04,General Inquiry,Low,Resolved,0.1
+666,2661,2024-09-29,General Inquiry,High,Closed,39.8
+667,3398,2024-09-20,Account Problem,High,In Progress,4.6
+668,1201,2025-06-02,Shipping Delay,Low,Resolved,18.1
+669,1953,2025-07-09,Product Issue,Low,Resolved,54.8
+670,4382,2025-06-09,Product Issue,Low,Closed,10.6
+671,533,2025-07-07,Shipping Delay,Low,In Progress,52.4
+672,4632,2025-08-09,Account Problem,Critical,Closed,2.4
+673,3732,2024-12-21,Shipping Delay,Low,Closed,12.9
+674,2469,2024-12-11,Refund Request,Low,In Progress,9.1
+675,4785,2025-04-26,Refund Request,Low,In Progress,8.6
+676,2851,2024-11-30,Product Issue,Low,Open,13.7
+677,3647,2024-12-15,Shipping Delay,Medium,Closed,17.8
+678,1538,2025-04-25,General Inquiry,Low,Closed,0.8
+679,4566,2025-08-09,Product Issue,Critical,Closed,38.1
+680,2073,2025-03-04,General Inquiry,Low,Resolved,78.2
+681,2887,2025-06-05,General Inquiry,Medium,Closed,0.6
+682,4530,2024-12-31,Account Problem,Medium,Resolved,105.4
+683,4356,2024-08-22,Shipping Delay,Low,Closed,6.4
+684,4368,2024-10-12,General Inquiry,Medium,Resolved,39.1
+685,4528,2025-05-07,General Inquiry,Critical,Resolved,43.1
+686,3926,2024-12-10,Shipping Delay,Low,In Progress,31.9
+687,4242,2025-06-06,Product Issue,Medium,Closed,3.3
+688,764,2025-01-22,Product Issue,High,Closed,54.9
+689,3884,2025-05-15,Product Issue,Medium,Resolved,42.5
+690,3260,2024-09-14,Shipping Delay,High,Closed,29.8
+691,1974,2024-08-24,Shipping Delay,Low,Closed,61.2
+692,3590,2025-05-07,General Inquiry,Medium,Resolved,23.8
+693,4829,2025-05-12,General Inquiry,Critical,Resolved,64.0
+694,1452,2024-09-13,Account Problem,Low,In Progress,29.1
+695,3696,2025-01-15,Refund Request,Medium,In Progress,6.6
+696,2077,2025-07-06,Account Problem,Low,In Progress,30.6
+697,4694,2025-03-12,Shipping Delay,Medium,In Progress,5.6
+698,1381,2024-09-22,Account Problem,Low,In Progress,20.3
+699,3775,2025-07-24,Shipping Delay,High,Resolved,96.7
+700,4411,2024-08-18,Shipping Delay,High,In Progress,34.2
+701,4285,2025-02-25,Product Issue,Low,Closed,19.3
+702,1935,2024-09-25,Product Issue,Low,Closed,24.1
+703,2557,2024-11-20,Account Problem,High,Resolved,52.0
+704,1442,2025-07-28,Product Issue,High,Resolved,5.7
+705,838,2025-02-20,General Inquiry,Low,Closed,2.3
+706,68,2025-02-21,General Inquiry,Low,In Progress,51.0
+707,1012,2025-05-07,General Inquiry,Low,Closed,6.1
+708,3316,2025-03-30,General Inquiry,Medium,Resolved,73.9
+709,2241,2025-07-11,General Inquiry,Medium,In Progress,20.4
+710,2204,2025-06-01,General Inquiry,Low,Closed,10.2
+711,2883,2025-02-23,General Inquiry,Medium,Closed,3.6
+712,3683,2024-11-14,Product Issue,Medium,Closed,13.6
+713,2556,2024-08-22,General Inquiry,Low,Open,1.6
+714,3381,2025-08-17,Refund Request,Low,Open,10.2
+715,1717,2025-04-14,Account Problem,Critical,Resolved,0.1
+716,3857,2025-04-20,Shipping Delay,Low,Resolved,7.0
+717,4332,2025-04-18,Product Issue,Medium,Open,4.1
+718,2639,2024-12-25,Account Problem,Low,Resolved,17.3
+719,1369,2025-08-17,Refund Request,Medium,Closed,34.3
+720,3148,2024-09-23,Shipping Delay,Low,Closed,50.5
+721,3389,2025-05-18,General Inquiry,High,Closed,2.9
+722,1051,2024-12-12,Account Problem,Low,Resolved,6.6
+723,1825,2025-04-20,General Inquiry,Medium,Closed,24.3
+724,2137,2025-06-19,General Inquiry,Low,Closed,7.4
+725,4696,2025-01-16,Refund Request,Medium,Resolved,5.9
+726,4255,2024-08-21,General Inquiry,High,Closed,62.5
+727,4363,2025-02-06,Account Problem,Critical,Resolved,78.3
+728,782,2024-10-29,Refund Request,Low,In Progress,6.5
+729,4805,2025-07-19,Shipping Delay,Low,Resolved,50.7
+730,1362,2025-02-24,General Inquiry,Low,Resolved,41.4
+731,1534,2024-10-22,Refund Request,Medium,Resolved,10.2
+732,2028,2024-09-08,Account Problem,Medium,Resolved,2.8
+733,283,2024-12-14,Refund Request,Low,Resolved,48.7
+734,4556,2024-09-01,General Inquiry,Medium,Open,67.4
+735,93,2024-11-19,General Inquiry,Low,Closed,44.4
+736,1868,2025-04-20,Refund Request,Medium,In Progress,15.0
+737,432,2024-10-25,Account Problem,Low,Resolved,2.6
+738,1273,2025-08-17,Product Issue,Low,In Progress,9.8
+739,3304,2025-05-06,Product Issue,Low,Closed,26.9
+740,4345,2025-06-19,Refund Request,High,Closed,7.0
+741,1129,2024-12-10,General Inquiry,High,Closed,2.3
+742,334,2024-08-20,Account Problem,High,In Progress,7.3
+743,2093,2024-12-05,Account Problem,Low,Closed,12.6
+744,3096,2024-12-12,Refund Request,Low,Open,6.2
+745,207,2025-08-10,Shipping Delay,Low,Resolved,10.4
+746,3532,2024-08-24,Refund Request,Low,Open,3.0
+747,3378,2024-09-25,Product Issue,Low,Closed,19.2
+748,4597,2024-10-17,Refund Request,Medium,Closed,2.0
+749,3988,2024-09-15,Product Issue,Low,In Progress,19.8
+750,1824,2025-02-05,Shipping Delay,Low,Open,13.7
+751,3210,2025-03-20,General Inquiry,Low,Open,9.2
+752,2586,2024-12-27,Shipping Delay,Low,Resolved,27.8
+753,123,2025-01-28,Account Problem,Low,In Progress,93.6
+754,132,2025-05-18,Product Issue,High,Closed,43.9
+755,916,2025-04-22,Refund Request,High,Resolved,61.7
+756,4205,2025-07-26,General Inquiry,High,Closed,21.3
+757,4977,2025-07-21,Shipping Delay,Medium,Closed,0.7
+758,2377,2024-11-04,Account Problem,High,Closed,24.7
+759,4357,2025-08-01,Shipping Delay,Low,Resolved,5.9
+760,2390,2025-04-28,General Inquiry,Medium,In Progress,38.7
+761,1250,2025-06-06,General Inquiry,Low,Resolved,8.8
+762,144,2024-12-15,Refund Request,Medium,Closed,11.3
+763,1610,2024-11-02,General Inquiry,Medium,Closed,3.8
+764,4207,2025-01-19,Shipping Delay,Low,Resolved,9.0
+765,4550,2024-09-12,Refund Request,Medium,Resolved,28.1
+766,843,2024-12-01,Refund Request,Low,In Progress,4.4
+767,1962,2024-12-25,Refund Request,Low,Resolved,23.6
+768,4765,2025-01-05,General Inquiry,High,Resolved,12.1
+769,331,2025-07-03,Product Issue,Medium,Resolved,25.1
+770,3902,2024-08-29,Refund Request,High,In Progress,2.4
+771,3500,2024-09-18,General Inquiry,Low,Closed,109.8
+772,3884,2024-10-16,Account Problem,High,Closed,3.3
+773,4312,2025-04-07,Account Problem,High,In Progress,9.4
+774,4229,2024-08-23,Account Problem,Low,In Progress,10.8
+775,1364,2024-11-22,Refund Request,Low,Closed,24.9
+776,2785,2024-11-17,General Inquiry,High,Resolved,9.1
+777,802,2024-09-18,General Inquiry,High,Closed,42.6
+778,593,2025-08-06,Shipping Delay,Low,Resolved,0.5
+779,3596,2024-10-17,General Inquiry,Medium,Closed,17.8
+780,3557,2025-03-10,Account Problem,Medium,Resolved,39.8
+781,4875,2025-02-01,Product Issue,Critical,Resolved,149.9
+782,1543,2025-03-13,Refund Request,Critical,In Progress,1.2
+783,522,2025-07-21,Refund Request,Medium,Closed,6.4
+784,925,2025-01-28,Product Issue,Medium,In Progress,2.9
+785,251,2025-01-30,Shipping Delay,Low,In Progress,70.6
+786,25,2025-02-10,General Inquiry,High,Resolved,0.9
+787,4884,2025-02-03,Product Issue,High,Open,34.3
+788,202,2024-12-29,Product Issue,Medium,Closed,90.7
+789,518,2025-01-12,Product Issue,High,In Progress,31.2
+790,818,2024-12-08,Product Issue,Medium,Closed,2.6
+791,2440,2025-01-19,Product Issue,Low,Closed,0.1
+792,4943,2025-07-30,Shipping Delay,Critical,In Progress,47.6
+793,4772,2025-04-10,General Inquiry,Medium,In Progress,23.6
+794,2350,2025-06-27,Product Issue,Critical,Closed,21.8
+795,415,2025-06-29,General Inquiry,Low,Resolved,30.3
+796,1107,2025-02-27,Product Issue,Medium,Resolved,8.5
+797,3962,2025-06-12,Refund Request,Critical,Closed,31.5
+798,4530,2025-05-04,Account Problem,Medium,Closed,17.7
+799,1043,2024-11-03,Product Issue,Medium,Resolved,7.9
+800,2201,2025-01-12,Account Problem,High,Open,31.3
+801,885,2024-11-19,Shipping Delay,High,Open,16.9
+802,1305,2024-11-05,General Inquiry,High,Closed,11.0
+803,2711,2025-06-09,General Inquiry,Low,Open,59.0
+804,3666,2024-10-14,Refund Request,High,Resolved,15.7
+805,1911,2024-08-30,Refund Request,Low,Open,29.5
+806,2697,2025-03-25,Account Problem,Medium,Closed,11.8
+807,3805,2024-12-04,Account Problem,Medium,Resolved,1.7
+808,4312,2025-03-08,Product Issue,High,In Progress,47.0
+809,2705,2025-06-01,General Inquiry,Medium,Open,26.2
+810,4383,2024-09-22,Shipping Delay,Low,Resolved,7.2
+811,3394,2025-01-21,Refund Request,Low,Closed,56.9
+812,4485,2025-03-02,Product Issue,Low,Open,16.7
+813,1980,2025-07-08,Account Problem,Low,Resolved,3.1
+814,2380,2025-01-01,Refund Request,High,Closed,30.0
+815,87,2024-10-30,Refund Request,Medium,In Progress,58.0
+816,4631,2024-09-19,Account Problem,Medium,Closed,96.2
+817,1209,2025-07-26,Account Problem,Medium,Closed,16.7
+818,3214,2025-03-31,Refund Request,Low,In Progress,24.5
+819,1390,2025-07-31,Account Problem,Medium,Resolved,23.8
+820,3538,2025-03-29,Refund Request,Low,Closed,3.1
+821,4405,2025-04-30,Shipping Delay,Low,Open,15.8
+822,607,2025-04-05,Shipping Delay,High,Open,12.6
+823,3342,2024-08-17,General Inquiry,High,Closed,2.1
+824,293,2025-05-11,Account Problem,Medium,Closed,31.4
+825,2685,2025-03-08,Account Problem,Critical,Resolved,45.9
+826,3041,2025-02-16,Refund Request,Low,In Progress,10.3
+827,4447,2025-06-28,General Inquiry,Low,Resolved,2.3
+828,4884,2024-08-29,General Inquiry,Medium,Open,21.8
+829,3913,2024-09-12,Product Issue,Medium,Resolved,59.5
+830,982,2025-06-06,Product Issue,Medium,Closed,9.7
+831,2467,2024-12-13,Refund Request,Low,Open,25.0
+832,3865,2025-01-11,General Inquiry,Low,Open,19.4
+833,1340,2024-09-29,Shipping Delay,Medium,Resolved,3.9
+834,4953,2025-08-12,Refund Request,Medium,Closed,13.7
+835,2364,2025-03-05,Refund Request,High,Open,4.8
+836,1762,2025-02-15,Shipping Delay,Low,Closed,17.5
+837,2181,2025-07-25,Shipping Delay,High,In Progress,1.7
+838,2691,2024-09-08,Product Issue,Low,Resolved,14.8
+839,4404,2025-06-17,Product Issue,High,Closed,18.7
+840,3962,2025-04-18,Shipping Delay,Low,Resolved,12.6
+841,1663,2025-05-17,General Inquiry,Low,Closed,0.6
+842,2300,2024-10-19,Product Issue,Low,Resolved,18.6
+843,2573,2025-02-18,General Inquiry,High,Resolved,0.2
+844,403,2025-05-14,Account Problem,Low,Open,49.5
+845,4026,2025-07-02,Refund Request,Low,In Progress,8.8
+846,4052,2024-11-13,Refund Request,Low,Closed,66.4
+847,2643,2025-07-28,Account Problem,High,Resolved,0.5
+848,3816,2025-04-15,Shipping Delay,Critical,In Progress,16.1
+849,1380,2024-10-06,Product Issue,Medium,Open,35.0
+850,2311,2024-11-28,Shipping Delay,Medium,In Progress,83.1
+851,4010,2025-06-23,Refund Request,Low,Closed,17.0
+852,3153,2025-01-15,Product Issue,Low,Open,24.9
+853,1216,2025-02-12,General Inquiry,Medium,Open,11.5
+854,3206,2025-03-14,General Inquiry,High,Open,83.9
+855,2169,2025-06-16,Account Problem,Medium,In Progress,92.0
+856,716,2024-11-14,Account Problem,Low,Closed,21.2
+857,1831,2024-09-20,General Inquiry,Low,Resolved,8.1
+858,4498,2024-12-13,Refund Request,Critical,In Progress,17.5
+859,3944,2025-05-11,Refund Request,Low,Resolved,2.9
+860,1238,2025-06-17,Refund Request,Low,Open,12.0
+861,2988,2025-01-14,Product Issue,Low,Resolved,19.1
+862,37,2024-12-03,Product Issue,Medium,Open,38.6
+863,3900,2024-10-17,Product Issue,Low,In Progress,11.2
+864,1683,2024-12-24,Account Problem,Medium,Closed,12.4
+865,2182,2025-06-12,Shipping Delay,Medium,Closed,17.6
+866,4503,2024-08-28,Refund Request,Low,Resolved,28.0
+867,2261,2025-03-02,Refund Request,High,Resolved,10.0
+868,1430,2025-06-27,Product Issue,Medium,Closed,43.4
+869,3694,2025-03-05,Account Problem,Low,Resolved,26.5
+870,2124,2025-05-29,Product Issue,Medium,Closed,26.2
+871,2554,2024-10-24,Shipping Delay,High,Resolved,59.8
+872,3877,2024-11-17,Account Problem,Low,Closed,105.3
+873,4797,2024-10-10,Account Problem,Low,Closed,18.5
+874,3529,2025-06-13,Product Issue,Low,Closed,24.0
+875,2896,2024-11-27,General Inquiry,Low,Closed,20.6
+876,3557,2025-04-19,Refund Request,High,Resolved,37.1
+877,2028,2024-11-02,General Inquiry,High,Resolved,5.3
+878,647,2025-04-16,General Inquiry,Critical,In Progress,37.8
+879,1643,2025-01-23,Shipping Delay,Low,Resolved,1.1
+880,2888,2025-07-06,Refund Request,High,Resolved,3.4
+881,3095,2025-03-26,Refund Request,Low,Resolved,9.9
+882,50,2025-01-31,Account Problem,Critical,In Progress,3.4
+883,1127,2025-07-13,Shipping Delay,Medium,Closed,8.2
+884,2466,2025-04-17,Product Issue,Low,Closed,3.8
+885,3969,2025-05-24,Refund Request,Low,Resolved,1.8
+886,4430,2024-12-13,Account Problem,High,Resolved,24.9
+887,23,2025-05-23,Product Issue,Medium,Closed,38.9
+888,4534,2025-05-04,Product Issue,Low,Closed,6.6
+889,904,2025-02-06,Account Problem,Medium,Resolved,18.2
+890,1782,2025-05-07,Product Issue,Low,Resolved,35.1
+891,3040,2025-07-02,Shipping Delay,Medium,Resolved,101.5
+892,1077,2025-02-23,Product Issue,Low,Closed,30.7
+893,171,2024-11-07,General Inquiry,Critical,Open,13.0
+894,4628,2024-10-13,Refund Request,High,Resolved,7.7
+895,4010,2024-11-21,Shipping Delay,Medium,Resolved,2.5
+896,2324,2025-02-24,Refund Request,Low,Resolved,8.6
+897,4680,2024-10-16,General Inquiry,High,Resolved,14.8
+898,4419,2024-11-24,Refund Request,Medium,Open,9.0
+899,1863,2025-07-18,Refund Request,High,Closed,35.6
+900,80,2025-07-26,General Inquiry,High,Resolved,37.0
+901,1991,2025-04-03,Refund Request,Critical,Closed,23.7
+902,3248,2025-05-21,Refund Request,Low,Closed,0.6
+903,2633,2025-05-21,Refund Request,Low,Closed,65.2
+904,4778,2024-10-19,Product Issue,High,Closed,76.1
+905,1003,2025-04-08,Refund Request,Critical,Resolved,35.1
+906,54,2024-10-20,Refund Request,Low,Closed,15.7
+907,1809,2025-04-26,Shipping Delay,Low,Closed,33.0
+908,567,2024-09-19,Product Issue,Low,Closed,69.2
+909,3037,2024-11-20,Account Problem,Low,Open,9.8
+910,3823,2024-11-14,Refund Request,Medium,Resolved,5.2
+911,4089,2024-10-09,General Inquiry,High,Resolved,22.1
+912,4249,2024-12-13,Account Problem,Medium,In Progress,42.8
+913,3223,2024-08-19,Account Problem,Medium,Resolved,13.1
+914,2872,2025-08-11,Product Issue,Low,Resolved,3.2
+915,3795,2025-01-16,General Inquiry,Medium,Closed,7.3
+916,4077,2024-09-13,Shipping Delay,Medium,Open,19.0
+917,2045,2025-03-05,Refund Request,Medium,In Progress,28.8
+918,1097,2025-01-20,Product Issue,High,Closed,7.7
+919,237,2025-05-10,Refund Request,Medium,Resolved,7.9
+920,3912,2025-04-12,Refund Request,Low,Closed,5.6
+921,4574,2025-04-24,Product Issue,Critical,Closed,12.1
+922,654,2024-12-07,Shipping Delay,Low,Resolved,12.9
+923,4262,2025-01-20,Shipping Delay,Low,Closed,10.0
+924,708,2024-08-24,Product Issue,High,Resolved,66.8
+925,1142,2025-01-02,Refund Request,Medium,Resolved,15.6
+926,1849,2025-01-17,Shipping Delay,High,In Progress,8.4
+927,1698,2025-04-02,General Inquiry,High,Resolved,77.4
+928,2516,2025-06-28,Product Issue,Low,Resolved,18.5
+929,2932,2025-08-05,Product Issue,High,Resolved,51.8
+930,2604,2024-10-14,Product Issue,High,Closed,29.0
+931,1110,2025-08-05,Account Problem,Low,Resolved,1.5
+932,651,2025-02-06,Product Issue,Low,Resolved,20.7
+933,3261,2024-11-22,Refund Request,Medium,In Progress,10.6
+934,1193,2025-08-10,Account Problem,Medium,In Progress,40.8
+935,754,2025-01-08,Account Problem,Low,In Progress,54.0
+936,503,2024-08-27,Account Problem,Medium,In Progress,2.3
+937,935,2025-08-10,Product Issue,Medium,In Progress,65.0
+938,1156,2025-01-06,Account Problem,Low,Resolved,21.3
+939,2056,2025-05-24,Refund Request,Low,Resolved,28.2
+940,1347,2025-05-16,General Inquiry,Medium,Resolved,85.3
+941,2558,2025-01-21,Refund Request,Low,Closed,11.0
+942,3293,2025-04-13,Shipping Delay,Low,Closed,24.0
+943,3189,2025-01-03,General Inquiry,Medium,Closed,16.0
+944,4108,2025-05-02,Shipping Delay,High,Resolved,31.3
+945,3049,2025-03-08,General Inquiry,Medium,Resolved,49.0
+946,4400,2024-10-21,Product Issue,Low,Closed,8.7
+947,3965,2025-01-12,Account Problem,High,Closed,4.1
+948,4299,2024-09-18,General Inquiry,Low,Resolved,15.2
+949,3332,2025-08-04,General Inquiry,Low,In Progress,16.9
+950,937,2025-07-15,General Inquiry,Low,Closed,17.0
+951,3245,2025-07-26,Shipping Delay,Low,Closed,1.2
+952,4455,2025-01-30,Account Problem,Medium,Resolved,8.9
+953,4141,2025-05-30,Account Problem,Critical,Resolved,22.4
+954,1359,2025-03-31,Product Issue,Medium,Resolved,1.2
+955,969,2024-09-22,General Inquiry,Low,Resolved,28.8
+956,4714,2024-11-02,Product Issue,Low,Closed,39.3
+957,529,2024-12-02,General Inquiry,Medium,Closed,13.1
+958,2955,2024-11-11,Shipping Delay,Medium,In Progress,43.9
+959,1361,2025-04-18,Refund Request,Medium,Open,20.0
+960,2165,2025-06-08,Shipping Delay,Low,Resolved,88.6
+961,634,2025-03-07,Account Problem,High,Open,43.1
+962,1517,2025-05-06,General Inquiry,Medium,Resolved,22.6
+963,1853,2025-06-05,Product Issue,High,Resolved,14.8
+964,2494,2024-09-13,Shipping Delay,Medium,In Progress,57.9
+965,86,2024-10-16,Refund Request,Medium,Closed,22.9
+966,1799,2025-06-10,Shipping Delay,Low,Resolved,16.0
+967,3848,2024-12-26,Product Issue,Critical,Resolved,27.9
+968,1195,2025-03-22,Refund Request,Low,Resolved,29.1
+969,4519,2025-08-13,Product Issue,High,Closed,41.3
+970,2689,2024-09-04,General Inquiry,High,Closed,10.4
+971,594,2024-10-28,Shipping Delay,High,Resolved,48.6
+972,2939,2024-12-19,General Inquiry,Low,Closed,51.9
+973,1926,2025-07-18,General Inquiry,Low,Resolved,53.7
+974,2982,2025-01-16,Refund Request,Medium,Resolved,1.7
+975,4793,2024-10-21,Product Issue,Low,Closed,10.2
+976,3880,2024-09-18,Refund Request,Low,Closed,34.5
+977,4485,2025-04-06,General Inquiry,Low,Closed,70.1
+978,3879,2025-02-04,Shipping Delay,High,Closed,10.4
+979,1271,2024-11-29,Account Problem,Medium,Closed,59.5
+980,1451,2025-02-17,Product Issue,Medium,Closed,37.3
+981,2280,2025-02-02,Account Problem,Medium,Resolved,69.5
+982,1262,2024-09-04,Account Problem,Medium,In Progress,31.1
+983,2135,2024-12-11,Account Problem,Low,Resolved,13.6
+984,3914,2025-05-28,Refund Request,Critical,Open,1.3
+985,570,2024-12-10,Refund Request,Critical,Closed,67.6
+986,2942,2024-09-08,Product Issue,High,Resolved,13.4
+987,315,2024-12-10,Account Problem,Medium,In Progress,9.6
+988,3985,2024-10-13,General Inquiry,Low,Resolved,11.9
+989,1297,2024-11-28,Refund Request,Medium,Closed,18.9
+990,3686,2024-09-28,General Inquiry,Low,Resolved,57.8
+991,289,2024-12-07,Refund Request,Low,Closed,19.6
+992,4529,2024-10-12,Shipping Delay,Medium,Resolved,55.8
+993,2641,2025-05-13,Product Issue,Medium,Closed,1.0
+994,4988,2025-05-07,Refund Request,Medium,In Progress,22.8
+995,3969,2025-01-25,General Inquiry,Medium,Closed,13.0
+996,3011,2024-12-17,General Inquiry,Low,Resolved,9.4
+997,3127,2025-01-09,Account Problem,Medium,Closed,8.2
+998,2692,2024-10-16,Refund Request,Low,In Progress,13.2
+999,3920,2025-01-28,Product Issue,Low,Resolved,48.6
+1000,71,2024-09-13,General Inquiry,Medium,Resolved,8.1
+1001,4769,2025-07-21,General Inquiry,Medium,Resolved,4.7
+1002,313,2025-01-17,Refund Request,Low,Closed,21.8
+1003,4563,2024-09-07,Shipping Delay,Medium,Closed,49.1
+1004,645,2024-11-24,General Inquiry,Low,In Progress,4.1
+1005,3557,2025-01-20,Refund Request,High,Closed,6.7
+1006,3140,2024-12-10,General Inquiry,Low,Resolved,1.5
+1007,3759,2024-11-20,Refund Request,Low,Closed,3.9
+1008,4098,2024-08-27,Account Problem,Low,Resolved,56.1
+1009,3018,2025-07-24,Product Issue,Critical,Resolved,50.9
+1010,698,2025-05-23,Product Issue,Low,Closed,13.2
+1011,1083,2024-08-27,Refund Request,High,Closed,9.3
+1012,4077,2025-02-03,Product Issue,Low,Resolved,13.7
+1013,1233,2024-10-18,General Inquiry,Low,Resolved,5.5
+1014,3617,2024-12-13,Account Problem,High,In Progress,51.0
+1015,2349,2025-02-12,General Inquiry,High,Resolved,8.0
+1016,2180,2025-08-01,Refund Request,High,Open,15.1
+1017,4942,2025-01-16,Product Issue,High,Resolved,16.8
+1018,1804,2025-07-29,General Inquiry,High,Resolved,12.4
+1019,4110,2025-01-14,Shipping Delay,Medium,Closed,10.8
+1020,3050,2025-05-11,Account Problem,Low,Closed,10.8
+1021,4770,2024-08-20,Account Problem,Medium,Closed,52.9
+1022,4789,2025-08-08,General Inquiry,High,Closed,6.5
+1023,3854,2025-01-02,General Inquiry,Medium,Closed,19.4
+1024,1337,2025-06-14,Account Problem,Medium,Closed,75.9
+1025,425,2025-05-22,Product Issue,Critical,In Progress,35.8
+1026,3863,2024-11-09,General Inquiry,High,Open,1.9
+1027,1257,2024-09-13,Product Issue,High,Closed,0.9
+1028,2538,2025-07-09,General Inquiry,Medium,Closed,37.4
+1029,3652,2024-11-09,Product Issue,Low,Closed,17.0
+1030,3871,2025-04-13,Account Problem,High,Closed,23.9
+1031,3971,2025-05-17,Refund Request,Medium,Closed,62.4
+1032,1584,2025-02-19,General Inquiry,Low,Open,68.4
+1033,4473,2025-06-06,Account Problem,Low,In Progress,35.1
+1034,457,2025-03-10,General Inquiry,High,Closed,11.3
+1035,4468,2024-11-06,Refund Request,Medium,In Progress,63.9
+1036,651,2025-02-12,Refund Request,High,Closed,48.6
+1037,2833,2024-12-05,Shipping Delay,Medium,In Progress,21.1
+1038,3608,2025-02-18,Product Issue,Low,Open,1.6
+1039,86,2025-01-10,General Inquiry,High,Open,56.9
+1040,2216,2025-01-11,Refund Request,Medium,Closed,32.6
+1041,4217,2025-06-21,Shipping Delay,Medium,Closed,15.4
+1042,2179,2025-05-24,Product Issue,High,Closed,10.1
+1043,1918,2025-04-08,Refund Request,Medium,Resolved,15.7
+1044,2402,2025-06-16,Refund Request,Low,Resolved,5.1
+1045,329,2024-11-12,Refund Request,Medium,Resolved,4.4
+1046,4419,2025-02-24,Product Issue,Low,Closed,25.2
+1047,1648,2025-02-16,Refund Request,High,Closed,9.3
+1048,3740,2025-05-26,Account Problem,High,In Progress,19.1
+1049,2381,2025-02-20,Account Problem,Medium,Resolved,4.5
+1050,4681,2025-08-05,Product Issue,Medium,Closed,6.6
+1051,364,2025-06-19,Shipping Delay,Medium,Open,30.1
+1052,653,2024-10-28,Account Problem,Medium,Resolved,14.4
+1053,734,2024-12-13,Shipping Delay,Low,Closed,9.9
+1054,1464,2025-06-12,General Inquiry,Medium,Closed,10.8
+1055,1322,2025-06-02,General Inquiry,High,Closed,12.3
+1056,1474,2024-10-24,Product Issue,Low,Resolved,36.2
+1057,1347,2025-07-30,Account Problem,Medium,In Progress,47.5
+1058,2389,2024-11-24,Shipping Delay,Low,Closed,39.6
+1059,2042,2024-10-21,General Inquiry,Medium,Resolved,5.4
+1060,1870,2025-02-20,Refund Request,Critical,Closed,22.5
+1061,2882,2025-03-03,Shipping Delay,Low,Resolved,28.9
+1062,3978,2024-12-16,Shipping Delay,Medium,Open,6.1
+1063,205,2025-06-16,Shipping Delay,Medium,Resolved,18.1
+1064,2214,2025-05-12,General Inquiry,Low,In Progress,9.4
+1065,788,2024-09-14,General Inquiry,Critical,Closed,1.3
+1066,4120,2024-10-24,Refund Request,Low,Closed,18.5
+1067,233,2025-07-11,Refund Request,Low,Closed,0.0
+1068,2885,2025-03-14,Shipping Delay,High,Open,38.7
+1069,1489,2025-05-03,Shipping Delay,Medium,Open,56.4
+1070,3277,2025-02-23,Account Problem,Medium,Closed,2.4
+1071,3887,2025-04-22,Account Problem,Medium,Closed,23.5
+1072,1969,2025-01-24,General Inquiry,High,Resolved,2.0
+1073,322,2025-06-12,General Inquiry,Low,In Progress,11.3
+1074,2277,2025-08-09,Account Problem,Low,Resolved,13.1
+1075,1253,2025-06-17,Shipping Delay,Low,Closed,2.5
+1076,1952,2024-09-27,Shipping Delay,Low,Closed,37.6
+1077,1584,2024-10-07,Refund Request,Medium,In Progress,35.7
+1078,1839,2025-06-05,Account Problem,Low,Closed,18.2
+1079,45,2025-05-29,Product Issue,Low,Closed,50.9
+1080,2856,2025-02-28,General Inquiry,Low,Closed,96.7
+1081,201,2024-10-12,Product Issue,Low,Resolved,2.5
+1082,1670,2025-01-29,Refund Request,Low,Closed,24.6
+1083,897,2024-09-27,Refund Request,Low,In Progress,0.7
+1084,1203,2024-10-17,Product Issue,High,Open,29.2
+1085,4365,2024-12-03,Account Problem,Medium,In Progress,2.3
+1086,1976,2025-07-07,Account Problem,Low,Closed,11.4
+1087,4231,2025-05-21,Product Issue,Medium,Closed,23.3
+1088,2739,2025-03-31,Account Problem,Medium,Closed,1.3
+1089,591,2025-04-11,Refund Request,Low,Open,5.7
+1090,103,2025-07-19,Shipping Delay,High,Resolved,2.7
+1091,150,2025-07-08,General Inquiry,Low,Closed,60.8
+1092,443,2025-03-20,Shipping Delay,Medium,Resolved,12.3
+1093,4837,2025-02-12,General Inquiry,Medium,In Progress,13.3
+1094,2698,2025-02-07,Shipping Delay,Low,Resolved,8.7
+1095,4979,2025-04-10,Account Problem,Medium,Resolved,18.4
+1096,265,2025-03-25,Product Issue,Low,Closed,5.5
+1097,4582,2025-04-07,Shipping Delay,Low,In Progress,61.5
+1098,2288,2025-07-10,Shipping Delay,High,Resolved,43.7
+1099,813,2024-12-06,Refund Request,Medium,Closed,12.3
+1100,1366,2025-04-29,Shipping Delay,Low,In Progress,41.7
+1101,211,2025-07-05,Product Issue,Low,Resolved,5.4
+1102,1519,2025-07-09,Shipping Delay,High,Resolved,40.6
+1103,2813,2025-03-01,Account Problem,Low,Closed,14.3
+1104,2459,2024-09-14,Shipping Delay,Low,Closed,1.8
+1105,2276,2025-03-31,Shipping Delay,Low,Resolved,11.8
+1106,3353,2024-12-16,Refund Request,Medium,In Progress,72.0
+1107,513,2025-05-13,Shipping Delay,Medium,Resolved,8.7
+1108,4279,2025-07-14,Account Problem,Medium,Resolved,17.8
+1109,1403,2024-08-31,Account Problem,Medium,Open,1.7
+1110,2569,2025-01-22,Refund Request,High,Closed,0.8
+1111,2463,2025-05-18,Refund Request,Low,Resolved,16.1
+1112,466,2025-03-19,Shipping Delay,Low,Resolved,16.7
+1113,4107,2024-10-03,General Inquiry,Low,Closed,1.9
+1114,3921,2024-10-24,Shipping Delay,Medium,Closed,16.2
+1115,2399,2025-07-11,Account Problem,Medium,Closed,80.2
+1116,3601,2025-02-10,Shipping Delay,High,Closed,2.4
+1117,4558,2024-12-29,Refund Request,Medium,Closed,46.9
+1118,3492,2025-01-20,Product Issue,High,Closed,32.7
+1119,384,2024-09-21,Refund Request,High,Resolved,4.2
+1120,1542,2025-05-24,Account Problem,Medium,In Progress,24.5
+1121,4763,2024-08-21,Shipping Delay,High,Open,12.5
+1122,2387,2024-12-09,Account Problem,Medium,Closed,28.0
+1123,3875,2025-08-06,General Inquiry,High,Closed,66.4
+1124,4934,2024-08-31,Shipping Delay,Low,Resolved,6.8
+1125,2755,2025-03-22,Account Problem,Medium,Resolved,48.7
+1126,1548,2025-01-29,Shipping Delay,Medium,Closed,3.0
+1127,1178,2025-02-16,General Inquiry,Medium,Closed,2.8
+1128,175,2025-07-06,Shipping Delay,Medium,Resolved,33.0
+1129,4391,2024-10-28,Shipping Delay,Low,In Progress,16.5
+1130,869,2024-10-11,Account Problem,High,Resolved,20.5
+1131,4285,2024-12-20,Shipping Delay,Low,Resolved,1.9
+1132,258,2025-06-20,Product Issue,Medium,In Progress,14.5
+1133,2104,2025-03-07,General Inquiry,Low,Closed,35.8
+1134,3677,2025-08-15,Account Problem,Low,In Progress,47.7
+1135,2795,2025-01-16,Product Issue,Low,Resolved,10.4
+1136,2849,2025-02-28,Product Issue,Low,Resolved,36.7
+1137,2117,2024-11-28,Product Issue,Low,Closed,2.7
+1138,4798,2025-03-07,Account Problem,Low,Open,4.4
+1139,3952,2024-09-13,Shipping Delay,Low,Resolved,9.7
+1140,2188,2024-08-28,Shipping Delay,Medium,Resolved,10.7
+1141,1851,2025-01-10,Account Problem,Medium,Open,0.3
+1142,80,2025-07-13,Account Problem,Critical,Resolved,145.6
+1143,1872,2024-10-18,Refund Request,High,Resolved,23.7
+1144,1410,2024-12-02,Product Issue,Low,Closed,9.8
+1145,2897,2025-02-11,Shipping Delay,High,Closed,77.4
+1146,135,2024-09-14,Account Problem,Low,Closed,19.0
+1147,641,2025-08-17,Refund Request,Low,Resolved,81.5
+1148,1025,2025-08-17,Account Problem,Low,In Progress,83.7
+1149,949,2025-01-14,Shipping Delay,Low,Resolved,51.1
+1150,3849,2024-12-29,Account Problem,Medium,Closed,11.9
+1151,1407,2025-08-07,Product Issue,Low,Open,9.9
+1152,4110,2025-01-16,Refund Request,Medium,Resolved,56.6
+1153,1300,2025-04-13,General Inquiry,High,In Progress,50.5
+1154,2832,2024-10-31,Account Problem,Low,Closed,36.4
+1155,1497,2025-04-18,Product Issue,Medium,In Progress,31.3
+1156,184,2025-07-15,Shipping Delay,High,Closed,64.9
+1157,2340,2025-06-06,Account Problem,Low,Closed,17.0
+1158,3892,2025-05-15,General Inquiry,High,In Progress,8.6
+1159,2701,2025-06-17,General Inquiry,Medium,In Progress,18.5
+1160,2544,2025-06-16,General Inquiry,Low,Closed,48.8
+1161,1052,2025-03-12,General Inquiry,Low,Closed,16.2
+1162,1792,2025-05-31,General Inquiry,High,Closed,5.1
+1163,3224,2025-01-26,Account Problem,Low,Resolved,4.7
+1164,2770,2025-07-29,Account Problem,Medium,Closed,21.8
+1165,146,2024-12-18,Account Problem,Medium,Resolved,51.4
+1166,559,2024-09-13,Shipping Delay,Low,Resolved,75.1
+1167,575,2025-08-13,Account Problem,High,Closed,69.4
+1168,1456,2024-10-26,General Inquiry,Medium,Resolved,47.9
+1169,3993,2024-08-26,Refund Request,Medium,Resolved,4.9
+1170,335,2024-12-25,Product Issue,Medium,Closed,8.7
+1171,432,2024-11-27,Product Issue,Medium,Closed,4.1
+1172,4834,2024-09-29,General Inquiry,Medium,Resolved,4.3
+1173,4450,2025-01-01,General Inquiry,Medium,Open,7.4
+1174,116,2025-06-20,Account Problem,Medium,Resolved,78.6
+1175,1142,2024-10-06,Product Issue,Medium,Resolved,123.4
+1176,3334,2025-02-28,Account Problem,Medium,Closed,24.9
+1177,4183,2024-08-27,Product Issue,Medium,Open,21.7
+1178,1051,2025-05-27,Product Issue,Medium,Closed,27.4
+1179,4307,2025-02-20,Account Problem,Low,Resolved,53.5
+1180,1168,2025-02-27,Product Issue,Low,Resolved,42.6
+1181,2600,2025-01-27,Shipping Delay,Medium,In Progress,26.4
+1182,4181,2025-07-24,Shipping Delay,Low,Open,12.2
+1183,239,2025-06-04,Product Issue,Low,Resolved,2.1
+1184,1323,2024-12-11,Product Issue,Medium,Resolved,48.4
+1185,1462,2025-02-13,Refund Request,Medium,Resolved,41.1
+1186,4302,2025-06-10,Shipping Delay,Medium,Closed,31.5
+1187,2719,2025-02-20,Refund Request,Medium,Closed,13.3
+1188,3720,2024-08-20,General Inquiry,Medium,Closed,1.7
+1189,4244,2024-09-30,Shipping Delay,Medium,In Progress,5.6
+1190,2193,2025-01-27,General Inquiry,Medium,Closed,44.0
+1191,4604,2025-03-30,General Inquiry,Low,Closed,16.7
+1192,1426,2025-01-09,Shipping Delay,Medium,Closed,11.7
+1193,1100,2024-10-09,Product Issue,Low,Closed,47.4
+1194,4303,2025-08-09,Product Issue,Medium,Resolved,0.9
+1195,4964,2024-08-23,Product Issue,Low,Closed,10.1
+1196,4341,2025-07-26,Account Problem,High,In Progress,118.8
+1197,3773,2025-06-02,Shipping Delay,Medium,Resolved,6.6
+1198,3342,2024-10-14,Account Problem,Medium,Closed,58.2
+1199,4137,2025-05-01,Account Problem,Low,In Progress,16.7
+1200,325,2024-11-17,General Inquiry,Medium,Closed,10.8
+1201,1890,2024-10-30,Shipping Delay,Low,Closed,34.1
+1202,3020,2025-01-11,Product Issue,Low,Closed,1.4
+1203,2405,2024-10-04,Refund Request,Medium,Resolved,25.1
+1204,3016,2025-02-23,Product Issue,Low,Closed,5.1
+1205,3014,2024-08-28,Product Issue,Medium,Open,43.3
+1206,2300,2025-01-19,Product Issue,High,Resolved,27.9
+1207,2429,2025-01-08,Shipping Delay,Medium,Closed,23.7
+1208,607,2025-06-11,Product Issue,Critical,Closed,14.6
+1209,4369,2024-11-19,Shipping Delay,High,In Progress,30.4
+1210,143,2025-05-05,Product Issue,Low,Open,19.5
+1211,2760,2025-03-22,Refund Request,Low,Resolved,36.7
+1212,4747,2024-09-14,Shipping Delay,Critical,Resolved,26.5
+1213,968,2024-11-05,General Inquiry,High,Resolved,12.4
+1214,3863,2025-06-28,General Inquiry,Low,Resolved,28.4
+1215,1549,2025-02-16,Account Problem,Low,Resolved,10.1
+1216,1304,2025-03-14,General Inquiry,Low,Open,56.5
+1217,3085,2025-04-04,Account Problem,High,Resolved,5.7
+1218,3298,2024-12-23,General Inquiry,Low,Closed,25.8
+1219,1661,2025-01-14,General Inquiry,Low,Closed,11.3
+1220,170,2025-05-11,General Inquiry,Low,Closed,4.2
+1221,788,2024-10-09,Product Issue,Medium,Open,14.2
+1222,1150,2025-08-15,Shipping Delay,Medium,Closed,51.1
+1223,1911,2024-11-03,Refund Request,Low,Closed,64.8
+1224,3517,2024-12-22,Product Issue,Medium,In Progress,7.9
+1225,4204,2024-12-09,Account Problem,High,Closed,18.5
+1226,4465,2025-07-18,Shipping Delay,Low,Resolved,127.5
+1227,383,2024-11-12,Product Issue,Low,In Progress,112.1
+1228,2935,2025-01-05,Product Issue,Low,Closed,2.1
+1229,523,2025-04-26,Shipping Delay,Low,Closed,47.3
+1230,1544,2025-08-13,Shipping Delay,Medium,In Progress,2.4
+1231,120,2024-09-12,Account Problem,High,In Progress,9.8
+1232,2612,2024-10-19,Shipping Delay,Medium,Closed,22.8
+1233,1886,2025-04-02,Account Problem,Medium,Resolved,58.5
+1234,3750,2024-08-24,General Inquiry,Medium,Closed,12.8
+1235,1825,2024-12-15,Product Issue,Low,Resolved,112.5
+1236,4644,2025-01-03,Account Problem,Medium,Closed,38.0
+1237,613,2025-03-16,Product Issue,Medium,Resolved,48.8
+1238,4628,2025-06-23,Shipping Delay,Medium,Resolved,6.2
+1239,4642,2025-03-24,Shipping Delay,Medium,Closed,13.0
+1240,4169,2025-06-28,Shipping Delay,Medium,Closed,6.1
+1241,3925,2025-01-25,Refund Request,Medium,Closed,11.4
+1242,3715,2024-11-10,Account Problem,Low,Resolved,15.4
+1243,3443,2025-05-18,Product Issue,Medium,Resolved,9.1
+1244,2235,2025-03-19,Product Issue,High,Resolved,60.2
+1245,1284,2025-01-01,Product Issue,Critical,Closed,17.8
+1246,2830,2025-07-08,Shipping Delay,High,Resolved,34.9
+1247,4612,2025-04-08,Account Problem,Low,Closed,39.0
+1248,4262,2025-08-12,Product Issue,Medium,Closed,129.8
+1249,4759,2025-01-05,Shipping Delay,Medium,Open,14.0
+1250,984,2024-10-09,Account Problem,Low,Closed,2.7
+1251,3469,2024-12-07,Product Issue,Critical,Open,4.7
+1252,2293,2025-06-30,Account Problem,Medium,Resolved,50.5
+1253,4630,2025-07-16,Refund Request,Medium,Closed,6.3
+1254,4237,2024-09-04,General Inquiry,Medium,Closed,20.2
+1255,3509,2024-12-26,Account Problem,High,Resolved,4.3
+1256,4104,2025-07-13,Product Issue,Low,Resolved,5.4
+1257,3608,2024-09-01,General Inquiry,Medium,Closed,92.6
+1258,905,2024-09-08,Shipping Delay,Medium,Closed,1.1
+1259,1382,2024-12-02,Product Issue,Medium,Resolved,1.7
+1260,1538,2025-07-04,General Inquiry,Low,Open,58.6
+1261,51,2024-12-17,Product Issue,Low,In Progress,11.5
+1262,3004,2025-06-19,Shipping Delay,Low,Closed,9.1
+1263,423,2024-09-20,Product Issue,Medium,Resolved,44.9
+1264,4067,2025-06-02,Product Issue,Low,Resolved,23.9
+1265,4195,2025-06-21,General Inquiry,Low,Closed,85.8
+1266,3343,2024-08-25,Product Issue,Medium,Resolved,4.9
+1267,4290,2025-05-28,Product Issue,Medium,In Progress,29.9
+1268,4388,2025-01-19,Refund Request,Medium,Closed,14.4
+1269,3559,2025-04-23,General Inquiry,Low,Resolved,0.8
+1270,3325,2025-01-12,Account Problem,Low,Resolved,2.0
+1271,4964,2025-06-09,Refund Request,High,Closed,29.2
+1272,776,2025-01-22,General Inquiry,Low,Open,15.6
+1273,4022,2024-08-21,Product Issue,High,Resolved,17.1
+1274,3942,2025-01-09,General Inquiry,High,Closed,2.5
+1275,2316,2025-03-20,General Inquiry,Low,Closed,10.9
+1276,1693,2025-03-04,Product Issue,Low,Closed,55.5
+1277,3447,2024-09-03,Account Problem,Low,Open,62.6
+1278,4159,2025-03-29,Shipping Delay,Medium,Resolved,40.2
+1279,2416,2024-12-17,Refund Request,Low,Closed,5.0
+1280,2882,2025-03-25,Refund Request,Medium,Closed,10.2
+1281,3039,2024-10-16,Account Problem,High,Resolved,4.5
+1282,212,2025-04-23,Shipping Delay,Medium,In Progress,13.8
+1283,2236,2024-11-26,General Inquiry,Critical,Closed,19.8
+1284,4674,2024-11-06,Account Problem,Critical,Resolved,15.4
+1285,2149,2025-03-29,General Inquiry,Medium,Closed,18.6
+1286,2460,2025-04-22,Shipping Delay,High,Resolved,5.7
+1287,2109,2025-04-27,Product Issue,Low,Closed,18.2
+1288,49,2025-02-28,Product Issue,High,In Progress,64.7
+1289,4067,2024-09-19,Shipping Delay,High,Resolved,73.5
+1290,4849,2024-12-25,General Inquiry,Medium,Open,0.8
+1291,3527,2025-03-09,Product Issue,Low,In Progress,12.0
+1292,3929,2025-04-17,Account Problem,Medium,Closed,14.5
+1293,2927,2025-03-03,Shipping Delay,High,Closed,2.9
+1294,3623,2024-11-20,Refund Request,Medium,Resolved,11.1
+1295,1544,2024-10-19,Product Issue,Low,Closed,3.9
+1296,429,2024-10-16,Account Problem,Medium,Resolved,7.0
+1297,4977,2025-01-09,Shipping Delay,Low,In Progress,78.6
+1298,4000,2025-07-03,Refund Request,Medium,Resolved,5.1
+1299,2201,2025-02-22,Refund Request,Low,In Progress,1.2
+1300,93,2024-09-07,Shipping Delay,High,Closed,1.9
+1301,2375,2024-10-21,Shipping Delay,Medium,Open,22.8
+1302,2276,2024-09-29,Account Problem,Low,Resolved,17.4
+1303,2855,2024-09-27,Shipping Delay,Low,Open,62.9
+1304,810,2025-01-23,Product Issue,Low,Closed,20.9
+1305,3142,2025-03-15,Account Problem,Low,Closed,1.2
+1306,1202,2025-06-03,Product Issue,Low,Open,35.2
+1307,1639,2025-01-15,Refund Request,Low,Closed,29.9
+1308,1541,2025-01-20,Refund Request,Medium,Open,20.9
+1309,2118,2025-05-02,Shipping Delay,Critical,Resolved,1.5
+1310,4157,2025-06-30,Shipping Delay,Medium,Resolved,2.5
+1311,2198,2024-09-02,Product Issue,Low,Open,0.8
+1312,510,2024-10-18,Shipping Delay,Low,Resolved,1.4
+1313,1157,2025-06-30,General Inquiry,Low,Resolved,1.0
+1314,2866,2025-03-14,Product Issue,Medium,In Progress,52.0
+1315,149,2025-04-10,Product Issue,Low,Closed,1.4
+1316,3021,2025-05-03,Product Issue,Medium,In Progress,2.3
+1317,3808,2025-08-17,Refund Request,Critical,Resolved,61.2
+1318,3811,2025-05-16,Account Problem,Medium,Open,15.9
+1319,1352,2024-10-26,Account Problem,High,In Progress,3.3
+1320,1328,2025-03-08,Account Problem,Medium,Closed,70.3
+1321,3797,2025-07-24,Account Problem,High,Closed,23.2
+1322,967,2025-07-13,Shipping Delay,High,Closed,31.6
+1323,2893,2024-09-22,Product Issue,Low,In Progress,11.7
+1324,2868,2024-11-24,Account Problem,Low,Closed,19.7
+1325,1015,2025-04-12,Shipping Delay,High,In Progress,28.0
+1326,2475,2025-03-01,Refund Request,High,Open,25.6
+1327,1322,2025-04-09,Refund Request,Low,Resolved,27.5
+1328,2748,2025-01-16,Refund Request,Medium,Resolved,0.9
+1329,1686,2025-08-06,Refund Request,High,Closed,34.0
+1330,801,2024-12-30,Account Problem,Low,Closed,16.1
+1331,634,2025-07-28,Account Problem,High,Resolved,15.7
+1332,1981,2025-02-01,Product Issue,Low,Resolved,29.9
+1333,4917,2025-07-17,Shipping Delay,Low,Resolved,9.2
+1334,4731,2025-04-29,Account Problem,Low,Resolved,24.7
+1335,1159,2025-04-02,General Inquiry,Low,Resolved,61.7
+1336,2666,2025-05-01,Refund Request,Low,In Progress,8.8
+1337,2643,2025-07-14,Shipping Delay,High,Closed,3.9
+1338,2094,2024-09-22,Product Issue,Medium,Open,65.5
+1339,3903,2025-07-04,Refund Request,Medium,Closed,3.6
+1340,2534,2025-05-21,Product Issue,Low,Closed,30.9
+1341,121,2025-02-20,General Inquiry,Low,Closed,19.5
+1342,1698,2025-03-19,Account Problem,Medium,Closed,7.5
+1343,2939,2024-09-28,General Inquiry,Medium,Closed,10.8
+1344,1857,2025-06-10,General Inquiry,High,Closed,11.4
+1345,1232,2025-08-15,Refund Request,Low,Closed,4.9
+1346,4086,2025-08-03,Account Problem,High,Open,52.9
+1347,1603,2025-08-09,Shipping Delay,Medium,Closed,51.4
+1348,4035,2025-01-06,Shipping Delay,Low,Resolved,3.9
+1349,371,2024-11-25,Account Problem,Medium,Resolved,20.5
+1350,4312,2025-05-06,Product Issue,Medium,Resolved,25.2
+1351,1998,2025-06-04,Shipping Delay,Low,Open,24.6
+1352,2903,2025-03-19,Product Issue,Medium,Closed,3.0
+1353,4316,2025-05-15,General Inquiry,Medium,Open,44.0
+1354,1652,2024-10-29,Account Problem,High,In Progress,0.8
+1355,689,2025-01-13,Refund Request,Low,In Progress,55.3
+1356,1825,2025-06-24,Account Problem,Low,Closed,58.9
+1357,2533,2024-09-19,Refund Request,Low,Resolved,58.2
+1358,1759,2025-05-31,Refund Request,Medium,Resolved,30.8
+1359,3591,2025-06-16,Account Problem,Low,In Progress,3.7
+1360,4750,2024-09-12,General Inquiry,Medium,Closed,3.6
+1361,3070,2024-12-17,Product Issue,Medium,Resolved,41.7
+1362,1447,2024-11-18,General Inquiry,Low,Closed,16.8
+1363,2227,2025-03-21,General Inquiry,Medium,In Progress,41.8
+1364,1499,2024-11-10,Refund Request,Medium,Open,6.8
+1365,718,2024-11-11,Shipping Delay,Low,In Progress,20.6
+1366,1938,2025-01-10,Refund Request,Medium,Closed,71.8
+1367,421,2025-01-14,Product Issue,Low,Closed,37.3
+1368,4964,2025-06-08,Account Problem,High,Closed,5.1
+1369,969,2025-04-22,Shipping Delay,Low,Closed,5.2
+1370,602,2025-07-12,Refund Request,Low,Closed,5.2
+1371,4738,2025-06-13,Refund Request,Low,Resolved,13.0
+1372,4672,2024-12-13,Account Problem,Medium,Closed,10.8
+1373,3941,2024-12-05,Product Issue,Low,In Progress,5.4
+1374,665,2025-04-03,Refund Request,High,Open,7.1
+1375,3050,2024-11-01,Refund Request,Medium,In Progress,66.1
+1376,3799,2024-12-04,Shipping Delay,Critical,In Progress,14.8
+1377,2751,2025-02-14,Product Issue,Low,Resolved,27.6
+1378,2726,2025-05-16,Refund Request,High,Resolved,69.9
+1379,450,2024-12-04,Product Issue,High,Closed,49.2
+1380,3683,2024-11-13,Refund Request,Low,In Progress,29.1
+1381,3159,2024-09-06,General Inquiry,Low,Closed,10.3
+1382,960,2024-11-15,Product Issue,Critical,Closed,7.5
+1383,1665,2024-12-09,Account Problem,Critical,Resolved,44.5
+1384,643,2025-04-23,Account Problem,Medium,Open,73.5
+1385,974,2024-10-11,Account Problem,Low,Resolved,29.6
+1386,1633,2025-01-31,Refund Request,Critical,In Progress,44.7
+1387,4091,2025-02-13,Shipping Delay,Medium,Closed,39.7
+1388,961,2025-03-17,General Inquiry,Low,Resolved,10.1
+1389,2394,2025-06-03,Refund Request,Critical,Resolved,24.6
+1390,213,2025-06-14,Account Problem,High,Closed,10.4
+1391,578,2024-11-29,Refund Request,Low,Resolved,22.8
+1392,2407,2025-06-28,General Inquiry,Medium,In Progress,2.8
+1393,4649,2024-12-27,Refund Request,High,Closed,1.6
+1394,1775,2025-06-24,Shipping Delay,Medium,In Progress,37.4
+1395,3710,2025-01-17,Shipping Delay,Low,Resolved,16.0
+1396,2235,2025-02-01,Shipping Delay,High,Resolved,10.6
+1397,4068,2025-05-28,Account Problem,Low,Closed,17.1
+1398,1282,2025-07-19,Product Issue,Low,Closed,5.1
+1399,835,2024-09-11,Shipping Delay,Medium,In Progress,59.6
+1400,4974,2024-09-28,Product Issue,Low,Open,11.2
+1401,1021,2025-06-11,Refund Request,Medium,Resolved,71.0
+1402,3489,2024-12-22,Account Problem,Low,Resolved,28.9
+1403,2760,2025-08-14,Refund Request,Low,Closed,4.6
+1404,2678,2024-12-30,Shipping Delay,Low,Closed,80.1
+1405,4591,2025-01-18,Product Issue,Critical,In Progress,11.7
+1406,3475,2025-03-23,Account Problem,Low,Resolved,27.2
+1407,121,2025-04-24,Product Issue,Medium,Open,2.3
+1408,1359,2024-09-15,General Inquiry,Low,Resolved,2.1
+1409,1377,2025-07-30,Product Issue,Medium,Closed,4.5
+1410,1674,2025-01-22,Shipping Delay,High,Resolved,39.0
+1411,594,2025-08-09,Product Issue,Medium,In Progress,13.8
+1412,1406,2024-08-18,General Inquiry,Medium,Closed,3.2
+1413,4095,2025-04-05,Product Issue,Low,In Progress,47.9
+1414,3400,2025-01-12,Shipping Delay,Medium,In Progress,26.3
+1415,1997,2024-12-14,Account Problem,High,Closed,76.4
+1416,4982,2025-05-04,General Inquiry,Low,Resolved,8.5
+1417,2694,2024-09-08,General Inquiry,Low,In Progress,7.7
+1418,4942,2025-01-07,Product Issue,Low,Resolved,27.9
+1419,2087,2025-02-03,Refund Request,High,Resolved,16.2
+1420,3339,2025-03-03,Product Issue,Low,In Progress,35.0
+1421,3260,2025-02-24,Account Problem,Medium,Closed,51.3
+1422,3559,2025-07-12,General Inquiry,Medium,In Progress,40.0
+1423,1497,2025-01-30,Refund Request,Medium,Resolved,4.8
+1424,1243,2025-01-26,Refund Request,Medium,Resolved,27.8
+1425,2366,2024-08-27,General Inquiry,High,Resolved,0.8
+1426,3367,2025-06-09,Account Problem,Low,In Progress,11.7
+1427,64,2025-06-13,General Inquiry,Medium,Closed,28.6
+1428,2583,2025-05-28,Refund Request,Medium,Resolved,6.2
+1429,811,2024-09-15,Shipping Delay,Medium,Resolved,42.3
+1430,1728,2025-02-15,Account Problem,Low,Closed,14.3
+1431,694,2025-08-14,Account Problem,Low,Resolved,3.6
+1432,3579,2025-03-16,Account Problem,Low,In Progress,10.6
+1433,574,2024-10-17,Shipping Delay,Low,In Progress,22.1
+1434,539,2025-05-06,Refund Request,Low,Resolved,38.8
+1435,1470,2025-04-15,Account Problem,Low,Resolved,4.4
+1436,1774,2025-01-11,General Inquiry,High,Open,9.9
+1437,4012,2025-07-14,Product Issue,Medium,In Progress,8.2
+1438,1481,2024-09-23,Product Issue,High,Resolved,23.8
+1439,2599,2025-07-19,Refund Request,Low,In Progress,9.7
+1440,1309,2025-07-15,Refund Request,High,Resolved,15.0
+1441,105,2024-12-05,Shipping Delay,High,Closed,12.5
+1442,4069,2025-06-03,Product Issue,High,Closed,39.5
+1443,1523,2025-04-18,Refund Request,Medium,In Progress,12.4
+1444,3805,2025-02-15,Refund Request,Low,In Progress,8.8
+1445,4377,2024-11-13,General Inquiry,High,In Progress,42.3
+1446,809,2024-08-23,Shipping Delay,Low,Closed,15.9
+1447,1182,2025-02-08,Shipping Delay,Low,Resolved,35.1
+1448,139,2024-12-08,Product Issue,Medium,In Progress,37.7
+1449,2374,2025-08-09,Refund Request,Medium,Resolved,18.0
+1450,1513,2025-03-15,Refund Request,Medium,Resolved,23.0
+1451,3433,2025-05-23,Product Issue,Medium,Resolved,12.7
+1452,3594,2024-08-28,General Inquiry,Low,Resolved,19.1
+1453,3101,2024-10-14,Shipping Delay,Low,Resolved,22.3
+1454,2334,2025-02-10,General Inquiry,Low,In Progress,63.4
+1455,2522,2025-04-06,General Inquiry,Low,Resolved,9.3
+1456,1907,2025-02-26,Product Issue,Medium,In Progress,7.2
+1457,2720,2025-05-27,Account Problem,Medium,In Progress,34.3
+1458,2702,2025-05-20,Shipping Delay,Low,Resolved,46.6
+1459,4926,2025-05-15,Refund Request,Medium,Closed,8.6
+1460,3307,2024-10-07,Refund Request,Low,Resolved,4.1
+1461,4747,2025-08-02,Product Issue,Medium,Open,5.9
+1462,881,2025-02-25,Product Issue,Low,Closed,34.9
+1463,1131,2024-11-03,Shipping Delay,Medium,Open,20.9
+1464,3450,2024-08-21,General Inquiry,High,Resolved,1.3
+1465,470,2024-09-29,General Inquiry,High,Resolved,6.3
+1466,260,2025-07-02,Shipping Delay,Medium,Closed,8.8
+1467,4700,2025-04-02,Shipping Delay,Low,In Progress,3.5
+1468,222,2025-07-31,Shipping Delay,Medium,Resolved,21.5
+1469,1543,2025-04-12,Refund Request,Low,Closed,1.0
+1470,557,2025-01-29,Product Issue,Medium,Closed,4.4
+1471,3553,2025-04-16,Refund Request,Low,In Progress,6.4
+1472,2737,2025-06-19,Refund Request,Low,Open,41.5
+1473,3930,2025-07-20,Product Issue,Medium,Open,7.9
+1474,9,2025-04-01,General Inquiry,Medium,In Progress,10.0
+1475,3273,2024-12-13,Product Issue,High,Resolved,12.5
+1476,669,2025-01-17,Account Problem,Low,Closed,20.7
+1477,3977,2025-07-09,Shipping Delay,Low,Closed,64.5
+1478,1499,2025-01-08,Shipping Delay,Low,Resolved,85.6
+1479,256,2025-06-21,Shipping Delay,Medium,Resolved,11.0
+1480,329,2025-06-16,Refund Request,Medium,Resolved,1.5
+1481,1343,2025-06-25,Shipping Delay,Low,Resolved,6.6
+1482,3087,2024-10-15,Product Issue,Low,Closed,8.3
+1483,3960,2024-09-27,Product Issue,Low,Resolved,11.6
+1484,3813,2025-02-17,Account Problem,Medium,Open,37.3
+1485,53,2024-12-08,Refund Request,Low,In Progress,35.5
+1486,3894,2025-07-22,Product Issue,Medium,Closed,2.1
+1487,4880,2025-01-08,Shipping Delay,Low,Resolved,7.0
+1488,3415,2025-04-27,Shipping Delay,Medium,In Progress,5.6
+1489,3495,2025-01-16,Account Problem,Medium,Closed,32.4
+1490,571,2024-12-17,Product Issue,Low,Closed,5.3
+1491,2547,2025-03-20,General Inquiry,Low,Resolved,33.2
+1492,450,2025-03-31,Account Problem,Low,Closed,6.3
+1493,2056,2025-08-05,Shipping Delay,Low,Resolved,21.7
+1494,4224,2025-05-13,Refund Request,Medium,In Progress,19.9
+1495,4022,2025-03-17,Shipping Delay,Low,Open,7.4
+1496,4931,2025-03-13,Account Problem,Low,Resolved,1.4
+1497,2297,2024-11-28,Shipping Delay,Medium,Open,48.8
+1498,4572,2024-10-31,Refund Request,Critical,Resolved,12.5
+1499,4081,2025-06-24,Refund Request,High,Closed,12.7
+1500,3450,2025-03-19,Shipping Delay,High,Open,3.2
+1501,3295,2025-01-28,Account Problem,Low,Resolved,11.7
+1502,4891,2025-03-23,Refund Request,Medium,Resolved,70.0
+1503,158,2024-12-09,Refund Request,Low,Closed,39.4
+1504,4115,2025-07-04,General Inquiry,Low,In Progress,13.8
+1505,1233,2024-12-12,Account Problem,Low,Closed,28.8
+1506,3119,2025-07-10,Shipping Delay,Low,Resolved,70.0
+1507,1024,2024-11-12,Product Issue,High,Resolved,10.4
+1508,375,2025-05-11,Account Problem,High,Resolved,20.2
+1509,4783,2025-03-21,Product Issue,Medium,Resolved,17.5
+1510,2788,2024-08-25,Refund Request,Low,In Progress,42.3
+1511,1576,2025-05-03,Refund Request,Low,Resolved,6.9
+1512,883,2025-01-16,Shipping Delay,High,In Progress,21.5
+1513,1865,2025-07-25,Product Issue,Medium,Resolved,28.4
+1514,1587,2025-03-07,Shipping Delay,Medium,Resolved,5.8
+1515,4144,2024-12-01,Shipping Delay,Low,Resolved,9.1
+1516,2099,2024-09-27,Product Issue,Low,Open,18.2
+1517,381,2025-07-03,Account Problem,Medium,Closed,1.6
+1518,1090,2024-12-12,Account Problem,Low,Resolved,6.7
+1519,1269,2025-01-09,Shipping Delay,Low,Resolved,5.9
+1520,3232,2025-02-14,Account Problem,Low,Closed,0.9
+1521,2161,2025-07-28,Refund Request,Low,Resolved,26.3
+1522,3251,2025-03-28,Account Problem,High,Resolved,44.1
+1523,3824,2025-01-01,Account Problem,Medium,Resolved,52.1
+1524,4726,2024-12-29,Product Issue,Low,Resolved,51.2
+1525,1749,2025-05-30,Shipping Delay,Medium,Closed,32.9
+1526,181,2025-06-28,Product Issue,Medium,In Progress,71.1
+1527,1642,2025-07-17,Refund Request,Low,Closed,20.3
+1528,1047,2025-05-24,Refund Request,Medium,Resolved,3.4
+1529,793,2025-06-23,General Inquiry,High,Closed,10.3
+1530,2525,2025-06-21,Shipping Delay,Critical,Resolved,71.3
+1531,3556,2025-02-09,Product Issue,Medium,In Progress,165.4
+1532,1682,2024-11-01,Product Issue,Low,Resolved,29.2
+1533,3331,2025-03-19,Refund Request,Medium,Closed,9.1
+1534,1000,2025-07-18,Account Problem,Medium,Closed,18.3
+1535,992,2024-09-11,Refund Request,Low,Resolved,28.9
+1536,402,2024-12-27,Product Issue,Low,Closed,3.5
+1537,3547,2025-04-19,Product Issue,Low,Resolved,1.8
+1538,3306,2025-01-28,Product Issue,Medium,Closed,20.1
+1539,1942,2025-05-22,Shipping Delay,Low,Resolved,15.5
+1540,1328,2025-02-08,Account Problem,Low,Closed,4.7
+1541,3387,2025-03-29,General Inquiry,High,Resolved,2.0
+1542,3563,2025-08-16,General Inquiry,Low,Open,16.8
+1543,1512,2025-04-05,Shipping Delay,High,Closed,25.7
+1544,2455,2025-02-15,Shipping Delay,Low,Resolved,2.6
+1545,2630,2025-04-23,General Inquiry,Low,Closed,14.5
+1546,933,2024-10-06,Account Problem,Low,Resolved,44.0
+1547,1946,2025-03-10,Account Problem,Low,Resolved,10.9
+1548,3825,2024-09-17,Product Issue,Medium,Closed,13.9
+1549,80,2024-12-28,Product Issue,Low,Closed,5.5
+1550,1522,2025-08-13,General Inquiry,High,Resolved,15.4
+1551,4474,2025-01-28,General Inquiry,Low,Open,11.7
+1552,361,2024-09-18,General Inquiry,Critical,Closed,115.2
+1553,70,2024-10-29,Shipping Delay,Critical,Closed,36.3
+1554,531,2025-04-26,General Inquiry,Medium,Resolved,10.8
+1555,1488,2024-08-25,Shipping Delay,Medium,Closed,15.5
+1556,4068,2024-10-04,Refund Request,Low,In Progress,28.9
+1557,2415,2025-06-19,General Inquiry,Medium,Resolved,21.9
+1558,4016,2025-04-17,Refund Request,Medium,Resolved,81.9
+1559,4022,2024-11-13,Shipping Delay,Medium,Resolved,17.1
+1560,1709,2025-07-15,Product Issue,Medium,Closed,129.1
+1561,1182,2024-10-18,Refund Request,Medium,Resolved,5.7
+1562,4979,2025-06-17,Product Issue,High,Resolved,7.1
+1563,3194,2025-02-19,Refund Request,Low,Resolved,13.6
+1564,1570,2025-07-21,General Inquiry,Medium,Resolved,1.9
+1565,786,2025-01-20,General Inquiry,Low,In Progress,7.1
+1566,3050,2024-11-08,Account Problem,High,Open,12.6
+1567,2900,2025-04-05,General Inquiry,Medium,Resolved,18.6
+1568,4277,2025-07-30,Shipping Delay,Medium,Resolved,7.1
+1569,483,2024-09-21,Refund Request,Medium,Resolved,5.8
+1570,4001,2025-01-17,Shipping Delay,Low,Closed,21.8
+1571,619,2025-05-20,Shipping Delay,Low,Resolved,31.3
+1572,4782,2025-04-19,Shipping Delay,Low,Resolved,39.5
+1573,766,2025-06-14,Product Issue,Low,Resolved,26.6
+1574,3226,2025-04-14,Refund Request,Critical,Open,26.2
+1575,1488,2024-12-05,General Inquiry,Low,Closed,74.6
+1576,1414,2025-06-15,Refund Request,Low,Open,5.2
+1577,309,2025-04-07,Product Issue,Low,Closed,132.0
+1578,929,2025-02-26,Shipping Delay,High,Closed,11.2
+1579,3389,2024-11-05,General Inquiry,Low,Closed,64.3
+1580,2445,2025-06-12,Refund Request,High,Closed,19.9
+1581,4513,2025-07-02,Shipping Delay,Low,In Progress,1.4
+1582,3529,2025-03-29,General Inquiry,Low,Closed,6.6
+1583,2778,2025-02-08,Refund Request,Critical,Resolved,11.8
+1584,1147,2025-01-16,Refund Request,Medium,Resolved,16.5
+1585,1821,2025-03-08,Account Problem,Low,Closed,15.2
+1586,1364,2025-02-13,Shipping Delay,Medium,Closed,27.7
+1587,3332,2025-05-08,Refund Request,Low,Open,25.9
+1588,3378,2025-05-13,Product Issue,Low,Closed,12.4
+1589,2384,2025-01-12,Product Issue,Low,Closed,43.4
+1590,4139,2025-01-06,General Inquiry,Low,Resolved,3.5
+1591,4577,2025-03-31,General Inquiry,High,Closed,43.1
+1592,830,2025-08-04,Product Issue,Low,In Progress,10.5
+1593,3628,2025-01-22,Refund Request,High,In Progress,25.0
+1594,2960,2024-12-09,Shipping Delay,Low,Resolved,86.8
+1595,760,2025-07-16,Refund Request,Low,Resolved,3.2
+1596,4042,2025-02-26,Shipping Delay,Low,Closed,4.4
+1597,3798,2024-09-28,Shipping Delay,Medium,Open,26.7
+1598,2195,2025-03-12,General Inquiry,Medium,Resolved,22.2
+1599,3306,2025-06-19,Product Issue,High,Resolved,0.2
+1600,763,2025-07-09,Refund Request,Medium,Closed,3.4
+1601,2758,2024-09-17,Product Issue,Medium,In Progress,10.1
+1602,4988,2025-05-05,Account Problem,Low,Closed,12.6
+1603,3353,2025-08-14,Product Issue,High,Closed,63.1
+1604,4721,2025-02-20,Refund Request,Medium,Closed,73.2
+1605,4332,2025-01-02,Account Problem,Low,Closed,26.6
+1606,1463,2024-11-13,Product Issue,Low,Closed,25.5
+1607,3292,2024-11-28,Shipping Delay,High,Resolved,11.4
+1608,1749,2024-09-01,General Inquiry,Low,Closed,4.4
+1609,720,2025-03-30,Product Issue,High,Open,61.5
+1610,2971,2025-01-31,Account Problem,Medium,Resolved,6.8
+1611,3967,2024-09-27,General Inquiry,Low,Open,48.6
+1612,1720,2025-04-20,Account Problem,High,Resolved,62.0
+1613,735,2025-03-28,Refund Request,Medium,Resolved,149.2
+1614,4141,2025-08-03,Account Problem,Medium,Resolved,6.4
+1615,3300,2025-04-22,Refund Request,Medium,In Progress,63.2
+1616,4589,2025-04-13,Account Problem,Low,Closed,43.1
+1617,3656,2025-02-04,Product Issue,High,Closed,15.9
+1618,1237,2025-06-12,Refund Request,Medium,Closed,19.2
+1619,289,2025-04-18,General Inquiry,Medium,Closed,14.0
+1620,2339,2025-07-08,Product Issue,Medium,In Progress,178.1
+1621,4448,2024-12-28,Shipping Delay,High,Closed,14.5
+1622,4199,2024-09-30,Shipping Delay,Medium,In Progress,5.5
+1623,1048,2024-09-19,General Inquiry,Low,Resolved,0.3
+1624,4110,2025-06-25,Product Issue,Low,Closed,12.5
+1625,1297,2025-02-21,Account Problem,Medium,Resolved,79.0
+1626,775,2024-12-17,General Inquiry,Low,Closed,19.5
+1627,4297,2025-01-26,General Inquiry,Medium,Resolved,56.5
+1628,1454,2024-11-09,Shipping Delay,High,Closed,20.6
+1629,2017,2025-07-02,Shipping Delay,Low,Resolved,0.4
+1630,712,2025-06-23,Product Issue,Low,Open,18.7
+1631,3332,2024-12-04,Account Problem,Low,In Progress,42.2
+1632,750,2025-07-01,Product Issue,High,Closed,9.6
+1633,2794,2024-12-03,Refund Request,Medium,Open,26.2
+1634,279,2024-09-08,Refund Request,Medium,Resolved,5.0
+1635,152,2025-01-24,General Inquiry,High,Resolved,19.3
+1636,4424,2024-09-05,Refund Request,Low,Closed,13.0
+1637,1082,2024-10-15,Shipping Delay,Low,Open,63.1
+1638,2978,2024-10-01,Product Issue,Low,Closed,12.9
+1639,4035,2024-08-30,Refund Request,High,Resolved,67.4
+1640,1217,2025-04-02,General Inquiry,High,Resolved,43.1
+1641,3632,2024-09-25,Product Issue,High,Closed,13.1
+1642,4547,2025-07-27,Product Issue,Medium,Resolved,31.1
+1643,216,2025-01-12,Shipping Delay,Medium,In Progress,47.5
+1644,3733,2025-06-28,Refund Request,High,Closed,27.6
+1645,1932,2025-06-18,Product Issue,Low,Resolved,0.6
+1646,3901,2025-07-19,Product Issue,Low,Closed,12.2
+1647,3819,2024-10-26,Refund Request,Low,Closed,2.7
+1648,3024,2025-02-01,Refund Request,High,Resolved,4.4
+1649,4812,2025-04-12,Account Problem,Medium,Closed,36.7
+1650,3631,2025-01-25,General Inquiry,Low,In Progress,4.6
+1651,4235,2025-04-15,Product Issue,High,Resolved,10.0
+1652,3382,2025-01-26,General Inquiry,Low,Closed,42.5
+1653,4575,2025-08-10,Account Problem,Low,Open,30.6
+1654,2477,2025-02-19,Product Issue,High,Closed,22.8
+1655,659,2024-10-19,General Inquiry,Medium,Resolved,21.5
+1656,4493,2025-06-12,Refund Request,Medium,In Progress,13.3
+1657,2035,2025-06-14,Refund Request,Medium,Resolved,0.5
+1658,4791,2025-02-09,Shipping Delay,Low,Resolved,12.0
+1659,4418,2025-06-19,Account Problem,Medium,Closed,9.0
+1660,1593,2025-02-28,Account Problem,Critical,Resolved,77.3
+1661,4373,2025-05-14,Account Problem,Critical,Closed,3.8
+1662,1953,2025-07-06,Product Issue,Low,In Progress,25.9
+1663,3901,2025-07-06,Account Problem,Low,Resolved,34.7
+1664,3093,2024-11-17,Refund Request,Low,In Progress,10.7
+1665,2398,2024-11-08,General Inquiry,Low,Closed,12.9
+1666,4554,2024-10-24,Shipping Delay,Low,Resolved,4.5
+1667,2247,2025-06-27,Product Issue,Medium,Open,59.3
+1668,4808,2025-06-27,General Inquiry,Medium,Open,10.2
+1669,2942,2024-10-25,Account Problem,Low,In Progress,40.3
+1670,4679,2025-01-11,Account Problem,Low,Resolved,24.7
+1671,774,2025-08-10,Shipping Delay,Critical,Closed,2.6
+1672,6,2024-11-05,Shipping Delay,Medium,Resolved,11.1
+1673,854,2025-02-24,Product Issue,Medium,Resolved,38.9
+1674,303,2024-11-02,General Inquiry,High,In Progress,4.1
+1675,670,2024-09-11,Shipping Delay,High,Closed,10.9
+1676,4875,2025-03-24,Product Issue,Low,Closed,9.2
+1677,4005,2025-01-24,General Inquiry,Low,Open,24.2
+1678,4117,2025-06-22,Account Problem,High,Closed,9.4
+1679,3980,2025-03-05,General Inquiry,Medium,Resolved,5.2
+1680,671,2024-10-23,General Inquiry,Medium,Closed,37.1
+1681,2521,2024-12-13,General Inquiry,Low,Resolved,20.5
+1682,2166,2024-10-31,Refund Request,Low,Closed,17.4
+1683,597,2025-01-27,Product Issue,Medium,In Progress,9.3
+1684,1430,2025-03-30,General Inquiry,Low,Closed,0.3
+1685,3575,2025-02-27,Product Issue,Medium,Resolved,10.8
+1686,4929,2024-09-13,Shipping Delay,Low,Closed,6.3
+1687,2590,2025-06-05,Product Issue,Low,Resolved,10.8
+1688,2257,2024-10-05,Shipping Delay,Medium,Resolved,4.5
+1689,1710,2025-07-27,Product Issue,Low,Resolved,21.4
+1690,846,2024-09-03,Account Problem,Medium,Resolved,17.7
+1691,3698,2024-09-03,Product Issue,Medium,Closed,1.1
+1692,3177,2025-01-31,Shipping Delay,Low,In Progress,29.7
+1693,2868,2025-02-16,General Inquiry,Critical,Resolved,3.0
+1694,4165,2025-03-21,Account Problem,Medium,Resolved,30.5
+1695,1699,2025-05-11,General Inquiry,High,Closed,22.9
+1696,1984,2025-04-12,Account Problem,Medium,In Progress,15.1
+1697,873,2025-02-07,Refund Request,Low,Closed,14.0
+1698,4810,2024-10-17,Refund Request,Low,Closed,10.6
+1699,3054,2025-01-27,Refund Request,High,Closed,5.0
+1700,1015,2025-02-11,General Inquiry,Medium,Resolved,29.6
+1701,4944,2024-10-02,Refund Request,Critical,Resolved,62.4
+1702,4671,2025-01-07,Shipping Delay,Medium,Closed,21.5
+1703,3178,2025-01-27,Product Issue,Medium,Closed,3.5
+1704,2168,2025-04-01,Product Issue,Medium,Closed,2.0
+1705,3249,2024-09-19,Account Problem,Low,In Progress,29.1
+1706,2637,2025-04-21,General Inquiry,High,Resolved,13.4
+1707,4421,2024-12-12,Shipping Delay,Low,Resolved,115.1
+1708,518,2025-05-25,Account Problem,Low,Closed,34.7
+1709,2535,2025-05-21,Account Problem,Medium,Resolved,45.8
+1710,1031,2025-02-15,Account Problem,Low,Closed,4.9
+1711,3151,2025-06-25,Shipping Delay,Low,Resolved,8.0
+1712,3795,2024-08-22,Product Issue,High,Closed,1.2
+1713,1598,2024-09-14,Product Issue,Medium,Resolved,11.1
+1714,524,2024-10-17,Product Issue,Low,Resolved,25.3
+1715,1880,2025-04-14,Product Issue,Low,Resolved,5.8
+1716,3707,2025-07-04,Product Issue,Low,Closed,41.4
+1717,4903,2025-03-15,Account Problem,Low,Closed,1.0
+1718,842,2024-11-07,Product Issue,Medium,Closed,5.1
+1719,2167,2025-05-06,Account Problem,Low,Closed,23.6
+1720,3188,2025-06-11,General Inquiry,Low,Closed,11.3
+1721,780,2025-04-01,Shipping Delay,Critical,Resolved,18.4
+1722,921,2025-06-03,Account Problem,Low,Resolved,43.6
+1723,4899,2025-06-11,Product Issue,Low,Closed,0.5
+1724,3005,2024-11-24,Account Problem,High,Closed,27.2
+1725,2671,2025-05-10,Refund Request,Medium,Open,4.6
+1726,4373,2025-01-02,General Inquiry,Low,In Progress,38.6
+1727,3724,2024-12-08,Shipping Delay,High,Open,2.1
+1728,1194,2024-09-16,Account Problem,Medium,In Progress,23.5
+1729,3143,2025-07-24,Shipping Delay,High,Closed,2.3
+1730,4511,2025-06-16,Shipping Delay,Medium,Closed,25.2
+1731,3313,2025-01-12,General Inquiry,Low,Resolved,22.9
+1732,1959,2024-12-02,General Inquiry,Medium,Open,117.7
+1733,3922,2025-01-14,Shipping Delay,Low,Resolved,25.2
+1734,1718,2024-08-27,Refund Request,Medium,Closed,4.6
+1735,3003,2025-02-22,Account Problem,Low,Closed,41.8
+1736,1507,2025-05-10,Account Problem,Medium,In Progress,57.5
+1737,3375,2024-09-27,Product Issue,Low,Resolved,36.1
+1738,2015,2024-12-31,Refund Request,Medium,Resolved,14.7
+1739,3981,2024-09-02,General Inquiry,Low,Closed,26.7
+1740,3063,2024-08-17,Account Problem,Medium,Resolved,30.3
+1741,2670,2025-01-31,Shipping Delay,Medium,Open,50.8
+1742,1190,2025-04-22,Account Problem,Low,Closed,33.0
+1743,633,2025-05-13,Refund Request,Medium,In Progress,18.5
+1744,99,2025-05-07,Account Problem,Low,Resolved,74.8
+1745,804,2025-01-16,Account Problem,Medium,Resolved,15.7
+1746,4956,2024-12-29,General Inquiry,Low,Resolved,15.0
+1747,4670,2025-08-06,Refund Request,High,Open,23.6
+1748,4562,2024-10-20,Shipping Delay,Low,Resolved,55.4
+1749,700,2025-03-18,General Inquiry,High,Resolved,67.6
+1750,2073,2024-12-23,General Inquiry,Medium,Resolved,2.3
+1751,4982,2025-08-03,Refund Request,Critical,Closed,15.9
+1752,4945,2024-11-02,Shipping Delay,Medium,In Progress,2.6
+1753,2656,2024-09-05,Shipping Delay,High,Closed,54.7
+1754,3283,2024-08-29,Product Issue,Medium,Closed,60.5
+1755,3350,2024-11-26,Product Issue,Medium,Open,33.1
+1756,20,2024-12-22,Product Issue,Medium,Closed,19.1
+1757,196,2025-01-09,Product Issue,Medium,Resolved,1.3
+1758,1361,2025-02-15,Refund Request,High,Resolved,33.7
+1759,1735,2025-05-13,Refund Request,High,Resolved,44.9
+1760,1527,2025-04-27,Shipping Delay,High,Resolved,9.8
+1761,349,2025-03-02,Account Problem,Medium,Closed,0.2
+1762,3377,2025-07-26,Account Problem,Low,Resolved,32.9
+1763,1464,2025-01-19,Product Issue,Medium,Closed,12.6
+1764,1849,2025-03-12,Refund Request,Low,Closed,3.0
+1765,2903,2025-07-18,Account Problem,Low,In Progress,3.9
+1766,3423,2025-06-23,Refund Request,Low,Closed,27.6
+1767,184,2024-12-25,Account Problem,Medium,Resolved,30.8
+1768,560,2025-04-14,Product Issue,Medium,Open,6.9
+1769,635,2024-10-26,Product Issue,Low,Closed,44.3
+1770,2612,2024-10-14,Shipping Delay,Low,Closed,9.0
+1771,2692,2024-10-14,Refund Request,High,Resolved,0.2
+1772,2662,2025-07-17,General Inquiry,Medium,Resolved,6.5
+1773,4619,2024-10-04,General Inquiry,Medium,Closed,79.5
+1774,1024,2025-07-19,Account Problem,High,Closed,15.5
+1775,3594,2025-05-31,Product Issue,Medium,Resolved,1.5
+1776,1598,2024-09-06,Refund Request,Low,Closed,101.2
+1777,2322,2024-08-24,Product Issue,Medium,Closed,34.4
+1778,1348,2025-06-11,General Inquiry,Critical,Resolved,24.2
+1779,1979,2025-01-13,General Inquiry,High,Closed,30.7
+1780,3618,2025-08-11,Refund Request,Low,Open,13.2
+1781,1587,2025-06-21,Account Problem,Medium,Resolved,11.8
+1782,4437,2024-12-29,Refund Request,Medium,Resolved,32.0
+1783,3408,2025-05-24,Shipping Delay,Medium,Closed,80.8
+1784,1505,2025-05-07,Refund Request,Low,Closed,20.8
+1785,812,2025-04-16,Account Problem,Low,In Progress,39.3
+1786,3312,2025-08-02,Account Problem,Low,Closed,14.6
+1787,4447,2025-02-18,Product Issue,Medium,In Progress,6.0
+1788,4729,2025-04-25,General Inquiry,Medium,Closed,37.8
+1789,1225,2025-02-08,Account Problem,Low,Resolved,20.4
+1790,3552,2024-12-13,General Inquiry,Medium,Closed,12.6
+1791,401,2025-04-23,General Inquiry,Low,Closed,50.7
+1792,70,2024-09-30,General Inquiry,Medium,Resolved,12.1
+1793,1853,2024-12-10,Account Problem,High,Resolved,3.0
+1794,4260,2024-11-30,Account Problem,Medium,In Progress,7.3
+1795,2907,2024-10-08,Account Problem,High,Closed,18.1
+1796,3899,2025-04-21,Refund Request,Medium,Resolved,77.9
+1797,3107,2024-09-07,General Inquiry,Medium,Closed,2.1
+1798,2697,2024-09-18,General Inquiry,Low,Resolved,49.5
+1799,509,2025-03-02,General Inquiry,High,Closed,4.9
+1800,364,2025-04-29,Account Problem,Low,In Progress,8.2
+1801,1065,2025-08-17,Account Problem,Low,In Progress,12.7
+1802,396,2024-08-17,Account Problem,High,Closed,8.2
+1803,415,2024-11-06,Product Issue,Low,Closed,68.0
+1804,1432,2025-08-09,Product Issue,Medium,Resolved,11.4
+1805,2056,2024-12-05,Product Issue,Low,Resolved,36.4
+1806,2558,2024-10-11,Shipping Delay,Low,Resolved,24.6
+1807,2577,2024-08-17,Shipping Delay,Low,In Progress,133.5
+1808,2163,2025-05-22,Product Issue,Low,In Progress,38.1
+1809,1654,2025-01-11,Refund Request,Low,Closed,41.0
+1810,1407,2025-05-28,Refund Request,Medium,In Progress,4.8
+1811,4423,2025-08-13,Product Issue,Medium,Resolved,9.3
+1812,591,2025-03-18,Refund Request,High,Open,43.9
+1813,428,2025-02-14,General Inquiry,Medium,Resolved,20.2
+1814,1648,2025-07-12,Product Issue,High,In Progress,116.0
+1815,3030,2025-08-10,Product Issue,High,In Progress,39.1
+1816,1686,2024-10-23,Account Problem,Medium,Open,33.5
+1817,2767,2024-09-12,Shipping Delay,Low,Resolved,15.1
+1818,4074,2025-08-11,Refund Request,Low,Resolved,2.2
+1819,4038,2025-02-27,Product Issue,High,Open,13.9
+1820,2523,2024-08-27,Product Issue,Medium,Closed,9.7
+1821,387,2024-12-03,Shipping Delay,Low,Resolved,35.5
+1822,4710,2025-07-07,Product Issue,Medium,Resolved,4.0
+1823,1763,2025-05-25,Shipping Delay,Low,Open,2.6
+1824,1704,2025-01-30,Refund Request,High,Closed,61.6
+1825,2773,2025-01-26,General Inquiry,Medium,Closed,10.5
+1826,2293,2025-03-08,Product Issue,Low,In Progress,14.4
+1827,3612,2025-02-16,Refund Request,Low,Closed,63.5
+1828,3608,2025-04-23,General Inquiry,Low,In Progress,15.0
+1829,4817,2025-06-20,Shipping Delay,Low,Closed,60.6
+1830,2384,2024-08-27,Product Issue,Low,Resolved,6.9
+1831,2200,2025-05-01,Product Issue,Low,Resolved,2.2
+1832,4631,2025-06-25,Shipping Delay,Medium,Closed,3.0
+1833,2154,2025-05-22,Product Issue,Medium,Resolved,37.0
+1834,1681,2025-07-29,Shipping Delay,Medium,In Progress,11.0
+1835,3602,2025-05-04,Refund Request,Low,In Progress,38.6
+1836,2830,2025-03-21,Refund Request,Medium,Closed,8.3
+1837,4356,2024-10-02,Refund Request,High,Resolved,1.3
+1838,1969,2025-06-23,Product Issue,High,In Progress,20.6
+1839,3486,2025-02-22,Shipping Delay,Medium,Closed,5.4
+1840,2541,2025-04-11,General Inquiry,High,Closed,2.2
+1841,785,2025-01-14,Product Issue,Low,Closed,2.3
+1842,2037,2024-10-11,General Inquiry,Medium,Open,15.8
+1843,4489,2024-10-04,Account Problem,Medium,Closed,16.0
+1844,1893,2024-09-17,Refund Request,Low,Resolved,59.6
+1845,1922,2025-02-01,General Inquiry,Medium,Resolved,14.2
+1846,3834,2025-02-20,Product Issue,Medium,In Progress,95.4
+1847,4060,2024-09-28,Product Issue,High,Resolved,59.7
+1848,1785,2024-10-13,Account Problem,Low,Open,28.9
+1849,544,2024-11-16,Product Issue,Low,Resolved,22.0
+1850,2197,2024-09-01,General Inquiry,High,Resolved,15.9
+1851,3204,2024-11-28,Product Issue,High,Closed,8.4
+1852,2576,2025-01-15,Refund Request,Low,In Progress,25.3
+1853,995,2025-05-14,Shipping Delay,High,Closed,17.6
+1854,862,2024-12-28,Product Issue,Medium,Closed,42.2
+1855,1385,2025-03-02,Refund Request,Medium,Closed,42.8
+1856,678,2024-11-12,Account Problem,Low,Closed,109.6
+1857,731,2025-07-25,Shipping Delay,Medium,Closed,10.0
+1858,424,2025-01-18,General Inquiry,Medium,Resolved,42.8
+1859,4362,2025-06-26,Account Problem,Low,Open,14.5
+1860,1515,2025-01-05,Shipping Delay,Medium,Resolved,33.8
+1861,2694,2025-04-08,Account Problem,High,In Progress,13.0
+1862,2822,2025-04-10,General Inquiry,High,Closed,36.9
+1863,375,2025-03-14,Product Issue,Medium,Closed,23.2
+1864,4932,2024-08-17,Refund Request,Critical,Closed,25.6
+1865,3287,2025-06-03,Refund Request,Low,Closed,15.4
+1866,2660,2025-06-01,Shipping Delay,Medium,Open,54.7
+1867,3446,2025-05-05,Shipping Delay,Medium,Closed,4.7
+1868,588,2025-04-19,Account Problem,Medium,Closed,1.6
+1869,4222,2025-05-24,Refund Request,Low,Resolved,4.4
+1870,4635,2024-09-23,General Inquiry,High,Open,11.1
+1871,1162,2025-01-21,General Inquiry,Medium,Resolved,0.5
+1872,240,2025-05-04,Shipping Delay,High,Closed,12.2
+1873,78,2025-01-25,Account Problem,Low,Resolved,31.8
+1874,1610,2025-01-03,Shipping Delay,Medium,Resolved,2.7
+1875,1603,2025-03-16,Account Problem,Low,Open,4.3
+1876,164,2025-06-30,Shipping Delay,Medium,Closed,5.1
+1877,610,2025-05-09,Product Issue,Medium,Closed,59.2
+1878,4055,2024-09-25,Account Problem,Low,Resolved,27.0
+1879,764,2025-07-05,Shipping Delay,Medium,Resolved,16.2
+1880,3636,2024-11-12,Shipping Delay,Low,Closed,6.7
+1881,930,2025-01-27,Refund Request,Low,Open,24.7
+1882,3806,2025-06-23,Account Problem,Low,Resolved,17.5
+1883,2698,2025-01-22,Account Problem,Low,In Progress,13.0
+1884,3535,2025-05-16,Shipping Delay,Critical,In Progress,0.6
+1885,1456,2024-10-19,Product Issue,High,In Progress,33.6
+1886,1459,2024-10-20,Product Issue,Low,Resolved,10.3
+1887,743,2025-06-08,Account Problem,High,Closed,9.8
+1888,3039,2024-10-15,General Inquiry,Low,Closed,15.2
+1889,597,2025-07-16,Shipping Delay,Low,In Progress,31.5
+1890,1819,2025-07-07,General Inquiry,High,Closed,111.6
+1891,3106,2024-08-31,Account Problem,Medium,Resolved,44.1
+1892,670,2025-03-15,Account Problem,Medium,Closed,33.4
+1893,4196,2025-01-10,Refund Request,Medium,Resolved,38.3
+1894,2942,2025-07-18,Shipping Delay,Critical,Resolved,13.1
+1895,1808,2024-09-10,Account Problem,Low,Closed,116.8
+1896,3508,2025-05-09,Refund Request,Low,In Progress,16.5
+1897,2850,2024-08-27,Account Problem,Low,In Progress,10.3
+1898,285,2024-10-10,Account Problem,Medium,Closed,9.7
+1899,173,2024-09-25,General Inquiry,Low,In Progress,3.0
+1900,1289,2024-11-17,Account Problem,Low,Closed,31.3
+1901,1522,2025-07-16,Refund Request,Medium,In Progress,56.2
+1902,47,2024-08-25,Refund Request,Low,Closed,20.5
+1903,2626,2025-05-19,Product Issue,Low,Closed,8.8
+1904,3755,2025-05-15,Account Problem,Low,Open,7.3
+1905,4457,2025-01-05,Refund Request,Low,Closed,0.9
+1906,3936,2024-08-26,Product Issue,High,Resolved,4.5
+1907,3772,2025-07-22,Shipping Delay,Medium,Resolved,56.4
+1908,4411,2025-03-26,General Inquiry,Medium,Resolved,8.7
+1909,2564,2025-08-11,General Inquiry,Low,Resolved,19.7
+1910,1405,2025-01-11,Account Problem,Medium,Resolved,15.9
+1911,1201,2025-07-05,General Inquiry,High,Closed,6.6
+1912,3844,2024-11-16,Product Issue,Medium,Closed,46.3
+1913,3180,2025-04-07,General Inquiry,Low,Closed,5.4
+1914,1119,2025-03-27,Shipping Delay,Medium,In Progress,15.5
+1915,4606,2024-11-26,Refund Request,Medium,In Progress,5.5
+1916,332,2025-02-21,Shipping Delay,High,Resolved,27.8
+1917,3970,2025-03-18,General Inquiry,Low,Resolved,54.6
+1918,1894,2024-10-31,Account Problem,Low,In Progress,3.5
+1919,2592,2025-07-29,Account Problem,Medium,Closed,18.5
+1920,2026,2024-12-09,Shipping Delay,Critical,Closed,47.9
+1921,2367,2025-03-10,Shipping Delay,Medium,Closed,12.4
+1922,801,2025-03-17,Product Issue,Low,Resolved,38.0
+1923,3609,2024-09-13,General Inquiry,Low,Resolved,33.0
+1924,4450,2025-05-13,Refund Request,Critical,In Progress,23.5
+1925,2453,2024-11-28,Refund Request,Critical,In Progress,1.4
+1926,3964,2025-01-17,Refund Request,Medium,Resolved,35.4
+1927,562,2024-08-19,Refund Request,Critical,Resolved,25.8
+1928,3862,2025-06-07,Product Issue,Low,Resolved,75.4
+1929,2371,2025-05-05,Account Problem,High,Resolved,52.1
+1930,1083,2025-06-05,General Inquiry,Medium,Open,15.8
+1931,1742,2025-03-21,Refund Request,Medium,Closed,4.2
+1932,4588,2024-10-12,Account Problem,Low,Closed,2.8
+1933,2211,2024-11-26,Account Problem,Low,Resolved,77.8
+1934,4880,2025-05-14,General Inquiry,Low,In Progress,17.1
+1935,3454,2025-02-05,Shipping Delay,Low,Closed,57.3
+1936,2065,2024-12-12,Shipping Delay,Medium,Open,29.3
+1937,228,2024-08-23,Refund Request,Medium,Closed,53.6
+1938,2996,2025-05-31,Shipping Delay,Low,Closed,25.2
+1939,532,2025-02-14,Product Issue,Low,In Progress,35.2
+1940,340,2025-03-24,Refund Request,Low,Closed,1.3
+1941,3366,2025-05-12,Refund Request,High,Closed,29.1
+1942,3485,2025-07-15,Product Issue,Low,Closed,19.4
+1943,4520,2024-12-12,Product Issue,Low,Closed,2.4
+1944,4255,2025-08-11,Product Issue,High,Resolved,17.8
+1945,1093,2024-11-05,Product Issue,Critical,Resolved,7.5
+1946,777,2024-12-15,Shipping Delay,Low,Closed,31.7
+1947,4266,2024-12-16,General Inquiry,Low,In Progress,1.4
+1948,3274,2024-12-05,Refund Request,Medium,Open,6.0
+1949,2395,2025-06-22,Shipping Delay,High,Closed,24.8
+1950,70,2024-09-29,Product Issue,Low,Closed,18.8
+1951,2387,2025-05-04,Shipping Delay,Low,Closed,1.9
+1952,2546,2025-02-14,Product Issue,Low,Resolved,24.2
+1953,6,2025-07-02,Product Issue,High,Resolved,30.0
+1954,2168,2025-01-07,Product Issue,Medium,In Progress,7.8
+1955,2097,2025-01-10,Shipping Delay,High,Closed,8.7
+1956,1810,2025-01-30,Shipping Delay,High,Closed,4.1
+1957,4660,2025-07-12,Refund Request,Medium,Resolved,81.5
+1958,2527,2025-01-13,Product Issue,Medium,Resolved,20.8
+1959,2515,2024-09-20,General Inquiry,High,Resolved,13.3
+1960,1394,2025-07-05,Shipping Delay,Medium,In Progress,123.8
+1961,4248,2025-04-07,Account Problem,High,Resolved,0.6
+1962,449,2025-01-18,Refund Request,Medium,Closed,36.5
+1963,3353,2024-10-28,General Inquiry,Medium,Closed,74.8
+1964,2151,2024-09-20,General Inquiry,Low,Closed,52.6
+1965,3640,2024-11-11,Refund Request,Medium,Closed,46.7
+1966,3209,2024-10-22,Account Problem,Medium,Resolved,2.4
+1967,3518,2024-11-16,Account Problem,Low,Open,4.9
+1968,4796,2025-03-31,Shipping Delay,Medium,Resolved,4.9
+1969,3108,2025-08-15,Refund Request,Low,Closed,69.0
+1970,3762,2024-10-26,Refund Request,Low,Resolved,34.5
+1971,3970,2025-04-14,Product Issue,Critical,Resolved,0.4
+1972,1796,2025-01-09,Shipping Delay,High,Open,33.4
+1973,330,2024-08-20,Product Issue,Medium,Resolved,9.1
+1974,1301,2024-09-30,Product Issue,Medium,In Progress,51.2
+1975,4709,2025-08-08,General Inquiry,Critical,Open,11.1
+1976,650,2025-05-06,Shipping Delay,Medium,Resolved,22.4
+1977,3101,2025-07-13,Refund Request,Low,Open,30.8
+1978,2657,2025-04-02,Account Problem,Critical,Resolved,51.1
+1979,4710,2025-02-20,Shipping Delay,Medium,Open,105.2
+1980,3452,2025-06-27,Refund Request,Low,Resolved,11.8
+1981,2035,2025-01-13,General Inquiry,Low,Resolved,24.2
+1982,1480,2024-09-17,Shipping Delay,High,Resolved,2.7
+1983,1678,2024-09-01,Shipping Delay,Low,In Progress,2.4
+1984,4573,2025-06-09,Product Issue,Low,In Progress,14.0
+1985,4472,2024-10-31,Product Issue,High,Open,45.5
+1986,4268,2024-10-08,Account Problem,Low,Resolved,15.5
+1987,3966,2025-06-24,Account Problem,Medium,Closed,36.5
+1988,2641,2024-09-25,General Inquiry,Low,Closed,44.6
+1989,1540,2025-01-16,Shipping Delay,Low,Closed,11.2
+1990,224,2024-12-26,Account Problem,Medium,Closed,15.1
+1991,2004,2025-07-13,Account Problem,Low,Closed,16.7
+1992,2526,2025-06-25,Refund Request,High,Closed,8.5
+1993,3161,2025-02-28,Refund Request,High,Open,9.9
+1994,2510,2025-05-18,Product Issue,Medium,Closed,8.3
+1995,1133,2024-08-18,Product Issue,Low,In Progress,6.5
+1996,4424,2025-03-21,Account Problem,Low,Closed,0.1
+1997,3413,2025-02-11,General Inquiry,High,Closed,8.2
+1998,2848,2024-10-14,Product Issue,Medium,In Progress,2.6
+1999,2334,2025-01-10,Shipping Delay,Medium,Closed,7.7
+2000,2535,2025-05-03,Account Problem,High,Closed,4.7
