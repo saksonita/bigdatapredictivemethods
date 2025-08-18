@@ -1,0 +1,1 @@
+{"high_risk_customers": 9, "revenue_at_risk": 5126.54, "weekly_forecast": 15436.355599999997, "clv_growth_potential": -2431.704771066783, "top_churn_features": ["purchase_frequency", "avg_order_value", "total_spent", "days_since_last", "age"], "analysis_date": "2025-08-18T19:02:37.612440"}
