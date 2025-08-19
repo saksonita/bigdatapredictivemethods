@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+
+{% block title %}Diagnostic Analytics - Why Did It Happen?{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-search me-2"></i>Diagnostic Analytics
+            <small class="text-muted">Why Did It Happen?</small>
+        </h1>
+    </div>
+</div>
+
+<!-- Churn Analysis -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-user-times me-2"></i>Customer Churn Analysis
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.churn_analysis.churn_by_segment %}
+                <div class="row">
+                    <div class="col-md-8">
+                        <h6>Churn Rate by Customer Segment</h6>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Segment</th>
+                                        <th>Total Customers</th>
+                                        <th>Churned</th>
+                                        <th>Churn Rate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for segment, data in results.churn_analysis.churn_by_segment.items() %}
+                                    <tr>
+                                        <td>{{ segment }}</td>
+                                        <td>{{ data.count }}</td>
+                                        <td>{{ data.churned }}</td>
+                                        <td>
+                                            <span class="badge bg-{{ 'danger' if data.rate > 0.4 else 'warning' if data.rate > 0.2 else 'success' }}">
+                                                {{ "{:.1%}".format(data.rate) }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Key Insights</h6>
+                        <ul class="list-unstyled">
+                            {% for insight in results.churn_analysis.key_insights %}
+                            <li class="mb-2">
+                                <i class="fas fa-lightbulb text-warning me-2"></i>{{ insight }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">Churn analysis data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Revenue Drivers -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-line me-2"></i>Revenue Drivers Analysis
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.revenue_drivers.category_performance %}
+                <h6>Performance by Product Category</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Revenue</th>
+                                <th>Avg Order</th>
+                                <th>Transactions</th>
+                                <th>Avg Discount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for category, data in results.revenue_drivers.category_performance.items() %}
+                            <tr>
+                                <td>{{ category }}</td>
+                                <td>${{ "{:,.2f}".format(data.revenue) }}</td>
+                                <td>${{ "{:.2f}".format(data.avg_order) }}</td>
+                                <td>{{ data.transactions }}</td>
+                                <td>{{ "{:.1%}".format(data.avg_discount) }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+                
+                {% if results.revenue_drivers.customer_concentration %}
+                <hr>
+                <h6>Customer Concentration Analysis</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="stat-item">
+                            <h4 class="text-primary">{{ results.revenue_drivers.customer_concentration.top_20_percent_customers }}</h4>
+                            <p class="mb-0">Top 20% Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="stat-item">
+                            <h4 class="text-success">{{ "{:.1%}".format(results.revenue_drivers.customer_concentration.top_20_percent_revenue_share) }}</h4>
+                            <p class="mb-0">Revenue Share</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-info mt-3">
+                    <i class="fas fa-info-circle me-2"></i>
+                    {{ results.revenue_drivers.customer_concentration.pareto_principle }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-pie me-2"></i>Churn by Segment
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.charts and results.charts.churn_by_segment %}
+                <div id="churnBySegmentChart" style="height: 300px;"></div>
+                {% else %}
+                <p class="text-muted">Chart data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Customer Behavior Analysis -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-users me-2"></i>Customer Behavior Patterns
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.customer_behavior.purchase_frequency %}
+                <h6>Purchase Frequency Analysis</h6>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-primary">{{ "{:.1f}".format(results.customer_behavior.purchase_frequency.avg_purchases_per_customer) }}</h4>
+                            <p class="mb-0">Avg Purchases</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-info">{{ "{:.1f}".format(results.customer_behavior.purchase_frequency.avg_customer_lifetime_days) }}</h4>
+                            <p class="mb-0">Avg Lifetime (Days)</p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if results.customer_behavior.discount_sensitivity %}
+                <h6>Discount Sensitivity</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Discount Level</th>
+                                <th>Revenue</th>
+                                <th>Transactions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for discount_level, data in results.customer_behavior.discount_sensitivity.items() %}
+                            <tr>
+                                <td>{{ discount_level }}</td>
+                                <td>${{ "{:,.0f}".format(data.revenue) }}</td>
+                                <td>{{ data.transactions }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-calendar me-2"></i>Seasonal Patterns
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.customer_behavior.seasonal_patterns %}
+                <h6>Quarterly Performance</h6>
+                <div class="row">
+                    {% for quarter, data in results.customer_behavior.seasonal_patterns.quarterly.items() %}
+                    <div class="col-6 mb-3">
+                        <div class="stat-item">
+                            <h5 class="text-primary">${{ "{:,.0f}".format(data.revenue) }}</h5>
+                            <p class="mb-0">Q{{ quarter }} Revenue</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <h6 class="mt-3">Day of Week Patterns</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Revenue</th>
+                                <th>Transactions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for day, data in results.customer_behavior.seasonal_patterns.day_of_week.items() %}
+                            <tr>
+                                <td>{{ day }}</td>
+                                <td>${{ "{:,.0f}".format(data.revenue) }}</td>
+                                <td>{{ data.transactions }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Correlation Analysis -->
+{% if results.correlations %}
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-project-diagram me-2"></i>Correlation Analysis
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h6>Key Business Correlations</h6>
+                        <div class="row">
+                            {% for correlation_name, value in results.correlations.key_correlations.items() %}
+                            <div class="col-md-6 mb-3">
+                                <div class="correlation-item p-3 border rounded">
+                                    <h6 class="mb-1">{{ correlation_name.replace('_', ' ').title() }}</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="correlation-bar me-3" style="width: 100px; height: 10px; background: linear-gradient(to right, 
+                                            {% if value > 0 %}#28a745{% else %}#dc3545{% endif %} 0%, 
+                                            {% if value > 0 %}#28a745{% else %}#dc3545{% endif %} {{ (value|abs * 100)|int }}%, 
+                                            #e9ecef {{ (value|abs * 100)|int }}%);"></div>
+                                        <span class="badge bg-{{ 'success' if value > 0 else 'danger' }}">{{ "{:.3f}".format(value) }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Statistical Insights</h6>
+                        <ul class="list-unstyled">
+                            {% for insight in results.correlations.insights %}
+                            <li class="mb-2">
+                                <i class="fas fa-chart-area text-info me-2"></i>{{ insight }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Churn by Segment Chart
+    {% if results.charts and results.charts.churn_by_segment %}
+    const churnData = {{ results.charts.churn_by_segment | safe }};
+    const churnChart = {
+        x: churnData.x,
+        y: churnData.y.map(val => val * 100), // Convert to percentage
+        type: 'bar',
+        marker: {
+            color: churnData.y.map(val => val > 0.4 ? '#dc3545' : val > 0.2 ? '#ffc107' : '#28a745')
+        }
+    };
+    
+    Plotly.newPlot('churnBySegmentChart', [churnChart], {
+        title: 'Churn Rate by Segment (%)',
+        xaxis: {title: 'Customer Segment'},
+        yaxis: {title: 'Churn Rate (%)'},
+        margin: {t: 40, r: 40, b: 80, l: 60}
+    });
+    {% endif %}
+});
+</script>
+{% endblock %}

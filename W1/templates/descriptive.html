@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %}Descriptive Analytics - What Happened?{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-chart-bar me-2"></i>Descriptive Analytics
+            <small class="text-muted">What Happened?</small>
+        </h1>
+    </div>
+</div>
+
+<!-- Customer Overview -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-users me-2"></i>Customer Overview
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="text-primary">{{ "{:,}".format(results.customer_overview.total_customers) }}</h3>
+                            <p class="mb-0">Total Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="text-success">{{ "{:,}".format(results.customer_overview.active_customers) }}</h3>
+                            <p class="mb-0">Active Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="text-warning">{{ "{:,}".format(results.customer_overview.churned_customers) }}</h3>
+                            <p class="mb-0">Churned Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-item">
+                            <h3 class="text-danger">{{ "{:.1f}%".format(results.customer_overview.churn_rate) }}</h3>
+                            <p class="mb-0">Churn Rate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="my-4">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Top Cities</h6>
+                        <ul class="list-unstyled">
+                            {% for city, count in results.customer_overview.top_cities.items() %}
+                            {% if loop.index <= 5 %}
+                            <li class="d-flex justify-content-between">
+                                <span>{{ city }}</span>
+                                <span class="badge bg-primary">{{ count }}</span>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Customer Segments</h6>
+                        <ul class="list-unstyled">
+                            {% for segment, count in results.customer_overview.segment_distribution.items() %}
+                            <li class="d-flex justify-content-between">
+                                <span>{{ segment }}</span>
+                                <span class="badge bg-info">{{ count }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sales Performance -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-dollar-sign me-2"></i>Sales Performance
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h4 class="text-success">${{ "{:,.2f}".format(results.sales_performance.total_revenue) }}</h4>
+                            <p class="mb-0">Total Revenue</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h4 class="text-primary">{{ "{:,}".format(results.sales_performance.total_transactions) }}</h4>
+                            <p class="mb-0">Total Transactions</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h4 class="text-info">${{ "{:.2f}".format(results.sales_performance.avg_order_value) }}</h4>
+                            <p class="mb-0">Avg Order Value</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Revenue Trend Chart -->
+                <div id="revenueTrendChart" style="height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-pie me-2"></i>Customer Segments
+                </h5>
+            </div>
+            <div class="card-body">
+                <div id="customerSegmentChart" style="height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Analysis -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-box me-2"></i>Product Performance
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-primary">{{ results.product_analysis.total_products }}</h4>
+                            <p class="mb-0">Total Products</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-success">${{ "{:.2f}".format(results.product_analysis.avg_price) }}</h4>
+                            <p class="mb-0">Avg Price</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h6>Top Selling Products</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for product, data in results.product_analysis.top_selling_products.items() %}
+                            {% if loop.index <= 5 %}
+                            <tr>
+                                <td>{{ product[:30] }}...</td>
+                                <td>{{ data.quantity }}</td>
+                                <td>${{ "{:.2f}".format(data.revenue) }}</td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-tags me-2"></i>Category Revenue
+                </h5>
+            </div>
+            <div class="card-body">
+                <div id="categoryRevenueChart" style="height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Temporal Analysis -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-calendar me-2"></i>Daily Patterns
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Revenue</th>
+                                <th>Transactions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for day, data in results.temporal_trends.daily_patterns.items() %}
+                            <tr>
+                                <td>{{ day }}</td>
+                                <td>${{ "{:,.2f}".format(data.revenue) }}</td>
+                                <td>{{ data.transactions }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-clock me-2"></i>Quarterly Sales
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for quarter, revenue in results.temporal_trends.quarterly_sales.items() %}
+                    <div class="col-6 mb-3">
+                        <div class="stat-item">
+                            <h4 class="text-primary">${{ "{:,.0f}".format(revenue) }}</h4>
+                            <p class="mb-0">Q{{ quarter }} Revenue</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Revenue Trend Chart
+    const revenueData = {{ results.charts.revenue_trend | safe }};
+    const revenueTrendChart = {
+        x: revenueData.x,
+        y: revenueData.y,
+        type: 'scatter',
+        mode: 'lines+markers',
+        name: 'Revenue',
+        line: {color: '#28a745', width: 3},
+        marker: {size: 8}
+    };
+    
+    Plotly.newPlot('revenueTrendChart', [revenueTrendChart], {
+        title: 'Monthly Revenue Trend',
+        xaxis: {title: 'Month'},
+        yaxis: {title: 'Revenue ($)'},
+        margin: {t: 40, r: 40, b: 40, l: 60}
+    });
+    
+    // Customer Segment Pie Chart
+    const segmentData = {{ results.charts.customer_segments | safe }};
+    const customerSegmentChart = {
+        values: segmentData.values,
+        labels: segmentData.labels,
+        type: 'pie',
+        textinfo: 'label+percent',
+        textposition: 'outside',
+        marker: {
+            colors: ['#007bff', '#28a745', '#ffc107', '#dc3545', '#6f42c1']
+        }
+    };
+    
+    Plotly.newPlot('customerSegmentChart', [customerSegmentChart], {
+        margin: {t: 20, r: 20, b: 20, l: 20},
+        showlegend: false
+    });
+    
+    // Category Revenue Chart
+    const categoryData = {{ results.charts.category_revenue | safe }};
+    const categoryRevenueChart = {
+        x: categoryData.x,
+        y: categoryData.y,
+        type: 'bar',
+        marker: {color: '#17a2b8'}
+    };
+    
+    Plotly.newPlot('categoryRevenueChart', [categoryRevenueChart], {
+        title: 'Revenue by Category',
+        xaxis: {title: 'Category'},
+        yaxis: {title: 'Revenue ($)'},
+        margin: {t: 40, r: 40, b: 80, l: 60}
+    });
+});
+</script>
+{% endblock %}

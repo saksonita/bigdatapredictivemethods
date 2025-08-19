@@ -1,0 +1,421 @@
+{% extends "base.html" %}
+
+{% block title %}Predictive Analytics - What Will Happen?{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-crystal-ball me-2"></i>Predictive Analytics
+            <small class="text-muted">What Will Happen?</small>
+        </h1>
+    </div>
+</div>
+
+<!-- Model Performance Overview -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-info">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-cogs me-2"></i>Model Performance Overview
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.model_performance %}
+                <div class="row">
+                    {% for model_name, model_info in results.model_performance.items() %}
+                    <div class="col-md-6 mb-3">
+                        <div class="model-card p-3 border rounded">
+                            <h6 class="text-primary">{{ model_name.replace('_', ' ').title() }}</h6>
+                            <p class="mb-1"><strong>Type:</strong> {{ model_info.model_type }}</p>
+                            <p class="mb-1"><strong>Features:</strong> {{ model_info.features_used }}</p>
+                            <span class="badge bg-success">{{ model_info.training_status }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="text-muted">Model performance data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Churn Prediction -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-user-times me-2"></i>Customer Churn Prediction
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.churn_prediction %}
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h4 class="text-primary">{{ "{:.1%}".format(results.churn_prediction.model_accuracy) }}</h4>
+                            <p class="mb-0">Model Accuracy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h4 class="text-danger">{{ results.churn_prediction.high_risk_customers.count }}</h4>
+                            <p class="mb-0">High-Risk Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h4 class="text-warning">${{ "{:,.0f}".format(results.churn_prediction.high_risk_customers.total_value_at_risk) }}</h4>
+                            <p class="mb-0">Value at Risk</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Prediction Summary</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-users text-primary me-2"></i>
+                                <strong>Total Customers:</strong> {{ "{:,}".format(results.churn_prediction.predictions_summary.total_customers) }}
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                <strong>Predicted Churners:</strong> {{ "{:,}".format(results.churn_prediction.predictions_summary.predicted_churners) }}
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-percentage text-info me-2"></i>
+                                <strong>Avg Churn Probability:</strong> {{ "{:.1%}".format(results.churn_prediction.predictions_summary.avg_churn_probability) }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Top Feature Importance</h6>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Importance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for feature in results.churn_prediction.feature_importance[:5] %}
+                                    <tr>
+                                        <td>{{ feature.feature }}</td>
+                                        <td>
+                                            <div class="progress" style="height: 20px;">
+                                                <div class="progress-bar" style="width: {{ (feature.importance * 100)|int }}%">
+                                                    {{ "{:.3f}".format(feature.importance) }}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">Churn prediction data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-line me-2"></i>Churn Distribution
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.charts and results.charts.churn_distribution %}
+                <div id="churnDistributionChart" style="height: 300px;"></div>
+                {% else %}
+                <p class="text-muted">Distribution chart not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CLV Prediction -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-dollar-sign me-2"></i>Customer Lifetime Value Prediction
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.clv_prediction and results.clv_prediction.model_performance %}
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-success">{{ "{:.3f}".format(results.clv_prediction.model_performance.r2_score) }}</h4>
+                            <p class="mb-0">R² Score</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-info">${{ "{:.2f}".format(results.clv_prediction.model_performance.rmse) }}</h4>
+                            <p class="mb-0">RMSE</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h6>CLV Segmentation</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Segment</th>
+                                <th>Customers</th>
+                                <th>Predicted CLV</th>
+                                <th>Current Spent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for segment, data in results.clv_prediction.clv_segments.items() %}
+                            <tr>
+                                <td>
+                                    <span class="badge bg-{{ 'success' if segment == 'Premium' else 'primary' if segment == 'High' else 'info' if segment == 'Medium' else 'secondary' }}">
+                                        {{ segment }}
+                                    </span>
+                                </td>
+                                <td>{{ data.customer_count }}</td>
+                                <td>${{ "{:.2f}".format(data.predicted_clv) }}</td>
+                                <td>${{ "{:.2f}".format(data.current_spent) }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-3">
+                    <div class="alert alert-info">
+                        <h6><i class="fas fa-info-circle me-2"></i>CLV Summary</h6>
+                        <p class="mb-1"><strong>Active Customers:</strong> {{ "{:,}".format(results.clv_prediction.predictions_summary.total_active_customers) }}</p>
+                        <p class="mb-1"><strong>Avg Predicted CLV:</strong> ${{ "{:.2f}".format(results.clv_prediction.predictions_summary.avg_predicted_clv) }}</p>
+                        <p class="mb-0"><strong>Total CLV Potential:</strong> ${{ "{:,.0f}".format(results.clv_prediction.predictions_summary.total_clv_potential) }}</p>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">{{ results.clv_prediction.message if results.clv_prediction and results.clv_prediction.message else "CLV prediction data not available" }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-area me-2"></i>Sales Forecasting
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.sales_forecast %}
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-primary">${{ "{:.2f}".format(results.sales_forecast.recent_performance.avg_daily_revenue) }}</h4>
+                            <p class="mb-0">Avg Daily Revenue</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <h4 class="text-{{ 'success' if results.sales_forecast.recent_performance.growth_rate > 0 else 'danger' }}">
+                                {{ "{:+.1f}%".format(results.sales_forecast.recent_performance.growth_rate) }}
+                            </h4>
+                            <p class="mb-0">Growth Rate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="salesForecastChart" style="height: 250px;"></div>
+                
+                <div class="mt-3">
+                    <div class="alert alert-success">
+                        <h6><i class="fas fa-calendar me-2"></i>7-Day Forecast</h6>
+                        <p class="mb-0">
+                            <strong>Total Predicted Revenue:</strong> ${{ "{:,.2f}".format(results.sales_forecast.forecast_total) }}
+                        </p>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">Sales forecast data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Demand Forecast -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-box me-2"></i>Product Demand Forecasting
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.demand_forecast %}
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Top Products by Demand</h6>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Category</th>
+                                        <th>Demand Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for product_id, data in results.demand_forecast.top_products_demand.items() %}
+                                    {% if loop.index <= 10 %}
+                                    <tr>
+                                        <td>{{ data.product_name[:30] }}...</td>
+                                        <td>{{ data.category }}</td>
+                                        <td>
+                                            <div class="progress" style="height: 20px;">
+                                                <div class="progress-bar bg-info" style="width: {{ (data.demand_score * 100)|int }}%">
+                                                    {{ "{:.2f}".format(data.demand_score) }}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {% endif %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Category Demand Distribution</h6>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total Quantity</th>
+                                        <th>Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for category, data in results.demand_forecast.category_demand.items() %}
+                                    <tr>
+                                        <td>{{ category }}</td>
+                                        <td>{{ "{:,}".format(data.total_quantity) }}</td>
+                                        <td>${{ "{:,.0f}".format(data.total_revenue) }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">Demand forecast data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-shield-alt me-2"></i>Risk Analysis
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if results.risk_analysis %}
+                <h6>Risk Segmentation</h6>
+                {% for segment, data in results.risk_analysis.risk_segmentation.items() %}
+                <div class="risk-segment mb-3 p-2 border rounded">
+                    <div class="d-flex justify-content-between">
+                        <span class="badge bg-{{ 'danger' if segment == 'High Risk' else 'warning' if segment == 'Medium Risk' else 'success' }}">
+                            {{ segment }}
+                        </span>
+                        <span class="text-muted">{{ data.customer_count }} customers</span>
+                    </div>
+                    <small class="text-muted">
+                        Value: ${{ "{:,.0f}".format(data.total_value) }} | 
+                        Avg: ${{ "{:.0f}".format(data.avg_value) }}
+                    </small>
+                </div>
+                {% endfor %}
+                
+                {% if results.risk_analysis.high_value_at_risk.count > 0 %}
+                <div class="alert alert-danger">
+                    <h6><i class="fas fa-exclamation-triangle me-2"></i>High-Value At Risk</h6>
+                    <p class="mb-1">{{ results.risk_analysis.high_value_at_risk.count }} customers</p>
+                    <p class="mb-0">${{ "{:,.0f}".format(results.risk_analysis.high_value_at_risk.total_value) }} at risk</p>
+                </div>
+                {% endif %}
+                {% else %}
+                <p class="text-muted">Risk analysis data not available</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Churn Distribution Chart
+    {% if results.charts and results.charts.churn_distribution %}
+    const churnData = {{ results.charts.churn_distribution | safe }};
+    const churnDistChart = {
+        x: churnData.x,
+        y: churnData.y,
+        type: 'bar',
+        marker: {color: '#17a2b8'}
+    };
+    
+    Plotly.newPlot('churnDistributionChart', [churnDistChart], {
+        title: 'Churn Probability Distribution',
+        xaxis: {title: 'Churn Probability'},
+        yaxis: {title: 'Number of Customers'},
+        margin: {t: 40, r: 40, b: 60, l: 60}
+    });
+    {% endif %}
+    
+    // Sales Forecast Chart
+    {% if results.charts and results.charts.sales_forecast %}
+    const forecastData = {{ results.charts.sales_forecast | safe }};
+    const forecastChart = {
+        x: forecastData.x,
+        y: forecastData.y,
+        type: 'scatter',
+        mode: 'lines+markers',
+        name: 'Forecast',
+        line: {color: '#28a745', width: 3},
+        marker: {size: 8}
+    };
+    
+    Plotly.newPlot('salesForecastChart', [forecastChart], {
+        title: 'Next 7 Days Sales Forecast',
+        xaxis: {title: 'Day'},
+        yaxis: {title: 'Revenue ($)'},
+        margin: {t: 40, r: 40, b: 60, l: 60}
+    });
+    {% endif %}
+});
+</script>
+{% endblock %}

@@ -1,0 +1,37 @@
+# E-commerce Analytics Dashboard Requirements
+
+# Core Flask Framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Data Processing and Analysis
+pandas==2.1.1
+numpy==1.24.3
+scipy==1.11.3
+
+# Machine Learning
+scikit-learn==1.3.0
+
+# Data Visualization
+plotly==5.16.1
+
+# Date and Time Handling
+python-dateutil==2.8.2
+
+# Development and Production
+gunicorn==21.2.0
+python-dotenv==1.0.0
+
+# Optional: Database support (if you want to add database functionality later)
+# SQLAlchemy==2.0.21
+# Flask-SQLAlchemy==3.0.5
+
+# Optional: API documentation (if you want to add API docs)
+# Flask-RESTX==1.2.0
+
+# Optional: Caching (for better performance)
+# Flask-Caching==2.1.0
+
+# Optional: Security enhancements
+# Flask-WTF==1.1.1
+# Flask-Login==0.6.3

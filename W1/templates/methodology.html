@@ -1,0 +1,353 @@
+{% extends "base.html" %}
+
+{% block title %}Analytics Methodology - How We Got These Results{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-microscope me-2"></i>Analytics Methodology
+            <small class="text-muted">How We Got These Results</small>
+        </h1>
+        <p class="lead">Understanding the methods and techniques behind each type of analytics helps you interpret results and apply similar approaches to other business problems.</p>
+    </div>
+</div>
+
+<!-- Descriptive Analytics Methods -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>Descriptive Analytics - "What Happened?"
+                </h4>
+            </div>
+            <div class="card-body">
+                <h5>Statistical Aggregation Methods</h5>
+                <ul>
+                    <li><strong>Group-by Operations:</strong> Used <code>groupby()</code> to segment customers by demographics and behavior</li>
+                    <li><strong>Value Counting:</strong> Applied <code>value_counts()</code> for distribution analysis (cities, segments)</li>
+                    <li><strong>Statistical Summaries:</strong> Used <code>describe()</code> for mean, standard deviation, quartiles</li>
+                </ul>
+
+                <h5>Temporal Analysis Techniques</h5>
+                <ul>
+                    <li><strong>Time Series Grouping:</strong> <code>dt.to_period('M')</code> for monthly trends</li>
+                    <li><strong>Day-of-Week Patterns:</strong> <code>dt.day_name()</code> to identify weekly cycles</li>
+                    <li><strong>Hourly Analysis:</strong> <code>dt.hour</code> for daily activity patterns</li>
+                </ul>
+
+                <h5>Customer Segmentation - RFM Analysis</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-primary">Recency (R)</h6>
+                            <p>Days since last purchase<br>
+                            <code>(current_date - last_purchase).days</code></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-success">Frequency (F)</h6>
+                            <p>Number of transactions<br>
+                            <code>transaction_count</code></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-warning">Monetary (M)</h6>
+                            <p>Total spending amount<br>
+                            <code>total_amount.sum()</code></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mt-3">Quantile-Based Segmentation</h5>
+                <p>Used <code>pd.qcut()</code> to create value tiers (Bronze, Silver, Gold, Platinum) based on spending distribution.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Diagnostic Analytics Methods -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-warning text-dark">
+                <h4 class="mb-0">
+                    <i class="fas fa-search me-2"></i>Diagnostic Analytics - "Why Did It Happen?"
+                </h4>
+            </div>
+            <div class="card-body">
+                <h5>Statistical Testing Methods</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-primary">Chi-Square Test</h6>
+                            <p><strong>Purpose:</strong> Test relationship between categorical variables and churn</p>
+                            <p><strong>Formula:</strong> χ² = Σ[(Observed - Expected)² / Expected]</p>
+                            <p><strong>Usage:</strong> Customer segment vs churn rate</p>
+                            <code>chi2_contingency(contingency_table)</code>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-success">T-Test</h6>
+                            <p><strong>Purpose:</strong> Compare means between two groups</p>
+                            <p><strong>Formula:</strong> t = (mean₁ - mean₂) / SE</p>
+                            <p><strong>Usage:</strong> Spending: Churned vs Retained customers</p>
+                            <code>stats.ttest_ind(group1, group2)</code>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Correlation Analysis</h5>
+                <p><strong>Pearson Correlation:</strong> Measures linear relationship between variables (-1 to +1)</p>
+                <ul>
+                    <li><strong>r > 0.7:</strong> Strong positive correlation</li>
+                    <li><strong>0.3 < r < 0.7:</strong> Moderate correlation</li>
+                    <li><strong>r < 0.3:</strong> Weak correlation</li>
+                </ul>
+                <code>dataframe.corr()</code>
+
+                <h5>Behavioral Analysis Techniques</h5>
+                <ul>
+                    <li><strong>Cohort Analysis:</strong> Track customer behavior over time by segments</li>
+                    <li><strong>Price Elasticity:</strong> <code>correlation(price, quantity)</code></li>
+                    <li><strong>Pareto Analysis:</strong> Identify top 20% customers generating 80% revenue</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Predictive Analytics Methods -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-crystal-ball me-2"></i>Predictive Analytics - "What Will Happen?"
+                </h4>
+            </div>
+            <div class="card-body">
+                <h5>Machine Learning Models</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-primary">Random Forest Classifier</h6>
+                            <p><strong>Purpose:</strong> Predict customer churn probability</p>
+                            <p><strong>How it works:</strong> Combines multiple decision trees</p>
+                            <p><strong>Input Features:</strong> Age, spending, frequency, support tickets</p>
+                            <p><strong>Output:</strong> Probability (0-1) of churning</p>
+                            <code>RandomForestClassifier(n_estimators=100)</code>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-success">Random Forest Regressor</h6>
+                            <p><strong>Purpose:</strong> Predict Customer Lifetime Value (CLV)</p>
+                            <p><strong>How it works:</strong> Ensemble of regression trees</p>
+                            <p><strong>Target:</strong> Future customer spending</p>
+                            <p><strong>Evaluation:</strong> R² score, RMSE</p>
+                            <code>RandomForestRegressor(n_estimators=100)</code>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Feature Engineering Process</h5>
+                <ol>
+                    <li><strong>Aggregation Features:</strong> Sum, mean, std of transactions per customer</li>
+                    <li><strong>Temporal Features:</strong> Days active, days since last purchase</li>
+                    <li><strong>Behavioral Features:</strong> Purchase frequency, discount sensitivity</li>
+                    <li><strong>Support Features:</strong> Ticket count, resolution time</li>
+                    <li><strong>Encoding:</strong> Convert categorical to numerical using LabelEncoder</li>
+                </ol>
+
+                <h5>Time Series Forecasting</h5>
+                <p><strong>Sales Forecast Formula:</strong></p>
+                <code>forecast[t+1] = current_value × (1 + growth_rate)^t</code>
+                <ul>
+                    <li><strong>Growth Rate:</strong> (Recent 7-day avg - Previous 7-day avg) / Previous avg</li>
+                    <li><strong>Trend Analysis:</strong> Linear regression on historical data</li>
+                </ul>
+
+                <h5>Model Evaluation Metrics</h5>
+                <ul>
+                    <li><strong>Classification Accuracy:</strong> (Correct Predictions) / (Total Predictions)</li>
+                    <li><strong>R² Score:</strong> 1 - (SS_res / SS_tot) [Regression quality]</li>
+                    <li><strong>RMSE:</strong> √(Σ(predicted - actual)² / n) [Prediction error]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Prescriptive Analytics Methods -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-lightbulb me-2"></i>Prescriptive Analytics - "What Should We Do?"
+                </h4>
+            </div>
+            <div class="card-body">
+                <h5>Optimization Techniques</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-primary">Customer Retention</h6>
+                            <p><strong>Method:</strong> Risk-based prioritization</p>
+                            <p><strong>Rule:</strong> Churn probability > 70% → Immediate intervention</p>
+                            <p><strong>ROI Focus:</strong> High-value customers first</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-success">Resource Allocation</h6>
+                            <p><strong>Method:</strong> CLV-based segmentation</p>
+                            <p><strong>Rule:</strong> CLV > 75th percentile → VIP treatment</p>
+                            <p><strong>Efficiency:</strong> Maximize ROI per dollar spent</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="border p-3 rounded">
+                            <h6 class="text-warning">Inventory Optimization</h6>
+                            <p><strong>Method:</strong> Demand forecasting</p>
+                            <p><strong>Rule:</strong> Stock level = Predicted demand × Safety factor</p>
+                            <p><strong>Goal:</strong> Minimize stockouts and overstock</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Decision Framework</h5>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Customer Risk Level</th>
+                            <th>Customer Value</th>
+                            <th>Recommended Action</th>
+                            <th>Method</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>High Risk (>70%)</td>
+                            <td>High Value (Top 25%)</td>
+                            <td>Personal call + Special offer</td>
+                            <td>Manual intervention</td>
+                        </tr>
+                        <tr>
+                            <td>High Risk (>70%)</td>
+                            <td>Medium Value</td>
+                            <td>Email campaign + Discount</td>
+                            <td>Automated campaign</td>
+                        </tr>
+                        <tr>
+                            <td>Medium Risk (30-70%)</td>
+                            <td>High Value</td>
+                            <td>Loyalty program invitation</td>
+                            <td>Engagement strategy</td>
+                        </tr>
+                        <tr>
+                            <td>Low Risk (<30%)</td>
+                            <td>High Value</td>
+                            <td>Upselling opportunities</td>
+                            <td>Growth strategy</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>ROI Calculation</h5>
+                <p><strong>Formula:</strong> ROI = (Benefit - Cost) / Cost × 100%</p>
+                <ul>
+                    <li><strong>Retention Benefit:</strong> Customer CLV × Retention probability improvement</li>
+                    <li><strong>Campaign Cost:</strong> Per-customer campaign cost</li>
+                    <li><strong>Break-even:</strong> Cost < (CLV × Probability improvement)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Key Concepts Summary -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-info">
+            <div class="card-header bg-info text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-key me-2"></i>Key Statistical & ML Concepts Used
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Statistical Methods</h5>
+                        <ul>
+                            <li><strong>Descriptive Statistics:</strong> Mean, median, std, quartiles</li>
+                            <li><strong>Inferential Statistics:</strong> Hypothesis testing</li>
+                            <li><strong>Correlation Analysis:</strong> Pearson correlation</li>
+                            <li><strong>Distribution Analysis:</strong> Histograms, quantiles</li>
+                        </ul>
+
+                        <h5>Data Processing</h5>
+                        <ul>
+                            <li><strong>Missing Values:</strong> <code>fillna()</code> with business logic</li>
+                            <li><strong>Date Parsing:</strong> <code>pd.to_datetime()</code></li>
+                            <li><strong>Feature Engineering:</strong> Create new meaningful variables</li>
+                            <li><strong>Encoding:</strong> Convert categories to numbers</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Machine Learning</h5>
+                        <ul>
+                            <li><strong>Supervised Learning:</strong> Classification & regression</li>
+                            <li><strong>Ensemble Methods:</strong> Random Forest algorithms</li>
+                            <li><strong>Model Validation:</strong> Train-test split</li>
+                            <li><strong>Feature Importance:</strong> Identify key predictors</li>
+                        </ul>
+
+                        <h5>Business Intelligence</h5>
+                        <ul>
+                            <li><strong>KPI Calculation:</strong> Churn rate, CLV, AOV</li>
+                            <li><strong>Segmentation:</strong> Value, behavior, risk-based</li>
+                            <li><strong>Cohort Analysis:</strong> Track groups over time</li>
+                            <li><strong>Portfolio Optimization:</strong> Risk-return balance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-light rounded">
+                    <h6><i class="fas fa-graduation-cap me-2"></i>Teaching Points for Students:</h6>
+                    <ol>
+                        <li><strong>Start with Questions:</strong> Always begin with business questions before choosing methods</li>
+                        <li><strong>Data Quality First:</strong> Clean, validate, and understand your data</li>
+                        <li><strong>Choose Appropriate Methods:</strong> Match statistical/ML methods to your data and goals</li>
+                        <li><strong>Validate Results:</strong> Use proper evaluation metrics and cross-validation</li>
+                        <li><strong>Interpret Business Impact:</strong> Translate technical results into actionable insights</li>
+                        <li><strong>Iterate and Improve:</strong> Analytics is an ongoing process, not a one-time activity</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling for any anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+</script>
+{% endblock %}

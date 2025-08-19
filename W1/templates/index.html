@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - E-commerce Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">
+            <i class="fas fa-tachometer-alt me-2"></i>E-commerce Analytics Dashboard
+        </h1>
+        <p class="lead text-muted">Comprehensive analytics platform for data-driven business insights</p>
+    </div>
+</div>
+
+<!-- Key Metrics Cards -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ "{:,}".format(stats.total_customers) }}</h4>
+                        <p class="card-text">Total Customers</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-users fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">${{ "{:,.2f}".format(stats.total_revenue) }}</h4>
+                        <p class="card-text">Total Revenue</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-dollar-sign fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">{{ "{:,}".format(stats.total_transactions) }}</h4>
+                        <p class="card-text">Total Transactions</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">${{ "{:.2f}".format(stats.avg_order_value) }}</h4>
+                        <p class="card-text">Avg Order Value</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-chart-line fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Analytics Types Overview -->
+<div class="row">
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 analytics-card" onclick="location.href='{{ url_for('descriptive') }}'">
+            <div class="card-body text-center">
+                <div class="analytics-icon mb-3">
+                    <i class="fas fa-chart-bar fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">Descriptive Analytics</h5>
+                <p class="card-text text-muted">What happened?</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success me-2"></i>Customer Demographics</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Sales Performance</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Product Analysis</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Temporal Trends</li>
+                </ul>
+                <button class="btn btn-primary">Explore</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 analytics-card" onclick="location.href='{{ url_for('diagnostic') }}'">
+            <div class="card-body text-center">
+                <div class="analytics-icon mb-3">
+                    <i class="fas fa-search fa-3x text-warning"></i>
+                </div>
+                <h5 class="card-title">Diagnostic Analytics</h5>
+                <p class="card-text text-muted">Why did it happen?</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success me-2"></i>Churn Analysis</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Revenue Drivers</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Customer Behavior</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Correlation Analysis</li>
+                </ul>
+                <button class="btn btn-warning">Analyze</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 analytics-card" onclick="location.href='{{ url_for('predictive') }}'">
+            <div class="card-body text-center">
+                <div class="analytics-icon mb-3">
+                    <i class="fas fa-crystal-ball fa-3x text-info"></i>
+                </div>
+                <h5 class="card-title">Predictive Analytics</h5>
+                <p class="card-text text-muted">What will happen?</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success me-2"></i>Churn Prediction</li>
+                    <li><i class="fas fa-check text-success me-2"></i>CLV Forecasting</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Sales Forecasting</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Risk Analysis</li>
+                </ul>
+                <button class="btn btn-info">Predict</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 analytics-card" onclick="location.href='{{ url_for('prescriptive') }}'">
+            <div class="card-body text-center">
+                <div class="analytics-icon mb-3">
+                    <i class="fas fa-lightbulb fa-3x text-success"></i>
+                </div>
+                <h5 class="card-title">Prescriptive Analytics</h5>
+                <p class="card-text text-muted">What should we do?</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success me-2"></i>Retention Strategies</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Pricing Optimization</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Marketing Campaigns</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Resource Allocation</li>
+                </ul>
+                <button class="btn btn-success">Optimize</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Insights -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-lightbulb me-2"></i>Quick Insights
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="insight-item">
+                            <h6 class="text-primary">
+                                <i class="fas fa-users me-2"></i>Customer Base
+                            </h6>
+                            <p class="mb-2">{{ "{:,}".format(stats.total_customers) }} customers across {{ stats.unique_products }} products</p>
+                            <small class="text-muted">Last updated: {{ stats.analysis_date }}</small>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="insight-item">
+                            <h6 class="text-success">
+                                <i class="fas fa-chart-line me-2"></i>Performance
+                            </h6>
+                            <p class="mb-2">${{ "{:.2f}".format(stats.avg_order_value) }} average order value</p>
+                            <small class="text-muted">Revenue performance tracking</small>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="insight-item">
+                            <h6 class="text-info">
+                                <i class="fas fa-cogs me-2"></i>Analytics Ready
+                            </h6>
+                            <p class="mb-2">All 4 analytics types available</p>
+                            <small class="text-muted">Machine learning models trained</small>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="insight-item">
+                            <h6 class="text-warning">
+                                <i class="fas fa-microscope me-2"></i>Learn the Methods
+                            </h6>
+                            <p class="mb-2">
+                                <a href="{{ url_for('methodology') }}" class="btn btn-outline-warning btn-sm">
+                                    <i class="fas fa-book me-1"></i>View Methodology
+                                </a>
+                            </p>
+                            <small class="text-muted">Understand the statistical methods behind the results</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Add hover effects and interactivity
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click handlers for analytics cards
+    const analyticsCards = document.querySelectorAll('.analytics-card');
+    analyticsCards.forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});
+</script>
+{% endblock %}
