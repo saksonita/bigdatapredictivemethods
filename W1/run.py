@@ -46,7 +46,7 @@ def main():
     # Import and run the Flask app
     try:
         from app import app
-        app.run(debug=True, host='0.0.0.0', port=5000)
+        app.run(debug=True, host='0.0.0.0', port=5002)
     except KeyboardInterrupt:
         print("\nDashboard stopped. Thank you for using the Analytics Dashboard!")
     except Exception as e:

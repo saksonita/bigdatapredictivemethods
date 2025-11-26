@@ -1,0 +1,149 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Upload your file to test RAG",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Upload your document here",
+              "fieldType": "file",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [80, 80],
+      "id": "67025898-517a-42d0-9011-43ec5cb632c8",
+      "name": "On form submission",
+      "webhookId": "a3c87391-207a-425e-8e0a-e37be871405e"
+    },
+    {
+      "parameters": {
+        "operation": "binaryToPropery",
+        "options": {}
+      },
+      "id": "f44eb9da-4572-43c9-8cd4-8ea190bb051f",
+      "name": "Extract Document Content",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [304, 80]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const text = $input.item.json.data;\nconst filename = $input.item.json.filename || 'document';\n\n// Simple markdown conversion - wrap text with basic formatting\nconst markdown = `# ${filename}\\n\\n${text}`;\n\nreturn {\n  json: {\n    markdown: markdown,\n    filename: filename\n  }\n};"
+      },
+      "id": "7dfd7dfd-cff2-4c11-9bb7-9741e1d57eaa",
+      "name": "Convert to Markdown",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [528, 80]
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "markdown",
+        "options": {
+          "fileName": "={{ $json.filename }}.md"
+        }
+      },
+      "id": "99cb8f9b-8219-47c6-8a2b-4932fde7776a",
+      "name": "Save as MD File",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [752, 20]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const text = $json.markdown;\nconst filename = $json.filename || 'document';\n\n// --- basic character-based chunking with overlap ---\nconst chunkSize = 1000;   // characters per chunk\nconst overlap = 200;      // characters of overlap between chunks\n\nfunction chunkText(text, size, overlap) {\n  const chunks = [];\n  let start = 0;\n  const len = text.length;\n\n  while (start < len) {\n    let end = start + size;\n    if (end > len) end = len;\n\n    let chunk = text.slice(start, end);\n\n    chunks.push({\n      chunk,\n      chunk_index: chunks.length,\n      start,\n      end\n    });\n\n    // move window forward with overlap\n    start += size - overlap;\n  }\n\n  return chunks;\n}\n\nconst chunks = chunkText(text, chunkSize, overlap);\n\nreturn chunks.map(c => ({\n  json: {\n    filename,\n    chunk: c.chunk,\n    chunk_index: c.chunk_index,\n    start: c.start,\n    end: c.end\n  }\n}));"
+      },
+      "id": "c5a4a6a8-1234-4e5f-9bcd-000000000001",
+      "name": "Chunk Markdown",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [752, 140]
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "chunk",
+        "options": {
+          "fileName": "={{ $json.filename + '_chunk_' + $json.chunk_index + '.md' }}"
+        }
+      },
+      "id": "e2b9d4f1-5678-4cde-9abc-000000000002",
+      "name": "Save Chunks as MD Files",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [976, 140]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Extract Document Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Document Content": {
+      "main": [
+        [
+          {
+            "node": "Convert to Markdown",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to Markdown": {
+      "main": [
+        [
+          {
+            "node": "Save as MD File",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Chunk Markdown",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chunk Markdown": {
+      "main": [
+        [
+          {
+            "node": "Save Chunks as MD Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "7be5e0b5-dea1-4590-9cbd-fe3ee00856c6",
+  "meta": {
+    "instanceId": "777c592bb9549445ee1dc3c126610088eb2a0e236c3034530ddb06640267389d"
+  },
+  "id": "QPu64wOFhHm0EAJs",
+  "tags": []
+}
