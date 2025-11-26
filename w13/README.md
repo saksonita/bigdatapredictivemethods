@@ -82,6 +82,31 @@ The scraper generates:
 6. **Screenshot**: Captures dashboard visualization
 7. **Cleanup**: Closes browser and saves files
 
+## NeuralProphet NumPy Compatibility Fix
+
+### Problem
+If you encounter this error when running NeuralProphet models:
+```
+AttributeError: `np.NaN` was removed in the NumPy 2.0 release. Use `np.nan` instead.
+```
+
+### Quick Fix
+Run the automated fix script:
+```bash
+# Option 1: Python script (recommended)
+python fix_numpy_compatibility.py
+
+# Option 2: Bash script
+bash fix_numpy_compatibility.sh
+
+# Option 3: Manual fix
+pip uninstall numpy -y
+pip install "numpy<2.0,>=1.24.0"
+```
+
+### Detailed Instructions
+See [NUMPY_FIX.md](NUMPY_FIX.md) for comprehensive troubleshooting and fix instructions.
+
 ## Troubleshooting
 
 ### ChromeDriver Issues
